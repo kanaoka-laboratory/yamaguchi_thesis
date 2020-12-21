@@ -1,0 +1,180 @@
+\documentclass[a4j]{jarticle}
+\date{}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+
+
+%表題
+\makeatletter %ここから\makeatotherまで触らなくていい
+	\def\@thesis{平成28年度 東邦大学理学部情報科学科 卒業研究}
+	\def\id#1{\def\@id{#1}}
+	\def\department#1{\def\@department{#1}}
+	
+	\def\@maketitle{
+		\begin{center}
+			\vspace{10mm}
+			{\large \@thesis \par}	%修士論文と記載される部分
+			\vspace{50mm}
+			{\huge\bf \@title \par}	% 論文のタイトル部分
+			\vspace{15mm}
+			{\Large 学籍番号　\@id \par}	% 学籍番号部分
+			\vspace{5mm}
+			{\Large \@author \par}	% 氏名
+			\vspace{50mm}
+		\end{center}
+		\begin{flushright}
+			{\large 金岡研究室}
+		\end{flushright}
+	}
+\makeatother
+
+\title{タイトルです} %中括弧の中に卒論のタイトル
+\id{55000000} %学籍番号
+\author{苗字と名前} %名前
+\maketitle{\title} %表紙の出力
+\thispagestyle{empty} %このページ（表紙）のページ番号を消去
+\newpage %強制改ページ
+
+\tableofcontents %目次の出力
+
+\newpage
+\section{はじめに} 
+
+\newpage
+\section{前提知識}
+\subsection{前提知識A}
+
+ああああああああ
+かかかかかかかか
+
+あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+\subsection{前提知識B}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+
+\newpage
+\section{関連研究} %先に書く
+\subsection{Xに関連した研究}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+\subsection{Yに関連した研究}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+
+\newpage
+\section{提案手法のメインな部分}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+
+\newpage
+\section{提案手法の試作みたいなのを書く部分}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+\newpage
+\section{試作を用いて評価}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+\newpage
+\section{まとめ}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+
+
+\newpage
+\begin{thebibliography}{99}
+\bibitem{bib01}
+だれだれ, "文献1", 年度
+\bibitem{bib02}
+だれだれ, "文献2", 年度
+\bibitem{bib03}
+だれだれ, "文献3", 年度
+\bibitem{bib04}
+だれだれ, "文献4", 年度
+\bibitem{bib05}
+だれだれ, "文献5", 年度
+\bibitem{bib06}
+だれだれ, "文献6", 年度
+\bibitem{bib07}
+だれだれ, "文献7", 年度
+\bibitem{bib08}
+だれだれ, "文献8", 年度
+\bibitem{bib09}
+だれだれ, "文献9", 年度
+\bibitem{bib010}
+だれだれ, "文献10", 年度
+
+\end{thebibliography}
+
+\end{document}
