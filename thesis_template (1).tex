@@ -1,0 +1,57 @@
+\documentclass[a4j]{jarticle}
+\date{}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+
+
+%表題
+\makeatletter %ここから\makeatotherまで触らなくていい
+	\def\@thesis{令和3年度 東邦大学理学部情報科学科 卒業研究}
+	\def\id#1{\def\@id{#1}}
+	\def\department#1{\def\@department{#1}}
+	
+	\def\@maketitle{
+		\begin{center}
+			\vspace{10mm}
+			{\large \@thesis \par}	%修士論文と記載される部分
+			\vspace{50mm}
+			{\huge\bf \@title \par}	% 論文のタイトル部分
+			\vspace{15mm}
+			{\Large 学籍番号　\@id \par}	% 学籍番号部分
+			\vspace{5mm}
+			{\Large \@author \par}	% 氏名
+			\vspace{50mm}
+		\end{center}
+		\begin{flushright}
+			{\large 金岡研究室}
+		\end{flushright}
+	}
+\makeatother
+
+\title{Androidアプリケーションにおけるサードパーティー製APIでの暗号技術利用動向の調査} %中括弧の中に卒論のタイトル
+\id{5517097} %学籍番号
+\author{山口千尋} %名前
+\maketitle{\title} %表紙の出力
+\thispagestyle{empty} %このページ（表紙）のページ番号を消去
+\newpage %強制改ページ
+
+\tableofcontents %目次の出力
+
+\input{./inputTexFile/section1.tex}
+
+\input{./inputTexFile/section2.tex}
+
+\input{./inputTexFile/section3.tex}
+
+\input{./inputTexFile/section4.tex}
+
+\input{./inputTexFile/section5.tex}
+
+\input{./inputTexFile/section6.tex}
+
+\input{./inputTexFile/section7.tex}
+
+\input{./inputTexFile/bibliography.tex}
+
+\end{document}

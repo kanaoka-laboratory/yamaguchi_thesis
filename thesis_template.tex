@@ -1,0 +1,244 @@
+\documentclass[a4j]{jarticle}
+\date{}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+
+
+%表題
+\makeatletter %ここから\makeatotherまで触らなくていい
+	\def\@thesis{令和2年度 東邦大学理学部情報科学科 卒業研究}
+	\def\id#1{\def\@id{#1}}
+	\def\department#1{\def\@department{#1}}
+	
+	\def\@maketitle{
+		\begin{center}
+			\vspace{10mm}
+			{\large \@thesis \par}	%修士論文と記載される部分
+			\vspace{50mm}
+			{\huge\bf \@title \par}	% 論文のタイトル部分
+			\vspace{15mm}
+			{\Large 学籍番号　\@id \par}	% 学籍番号部分
+			\vspace{5mm}
+			{\Large \@author \par}	% 氏名
+			\vspace{50mm}
+		\end{center}
+		\begin{flushright}
+			{\large 金岡研究室}
+		\end{flushright}
+	}
+\makeatother
+
+\title{Androidアプリケーションにおけるサードパーティー製APIでの暗号技術利用動向の調査} %中括弧の中に卒論のタイトル
+\id{5517097} %学籍番号
+\author{山口　千尋} %名前
+\maketitle{\title} %表紙の出力
+\thispagestyle{empty} %このページ（表紙）のページ番号を消去
+\newpage %強制改ページ
+
+\tableofcontents %目次の出力
+\section{はじめに}
+\section{前提知識}
+\section{関連研究}
+\section{提案手法のメイン部分}
+\section{}
+\section{}
+\section{}
+\subsection{}
+
+
+\section{}
+\subsection{}
+
+
+・前提知識
+　- Android
+　- Android OS
+　- APK
+　- Androidアプリケーション
+　- API
+　　・公式API
+　　・サードパーティー製API
+　　・独自実装等のAPI
+　- Android Developers
+　- APIリファレンス
+　- Liuxとは
+　- Ubuntu
+　- シェル
+　- シェルスプリクト
+
+関連研究
+　- 河合さんの研究
+　- 
+
+提案手法のメイン部分
+　- ＊API取得方法
+　　　GoogleのTinkの種類
+　　　　関連データを備えた認証付き暗号(プリミティブ: AEAD)
+　　　　メッセージ認証コード (プリミティブ: MAC)
+　　　　ディジタル署名(プリミティブ: PublicKeySignとPublicKeyVerify)
+　　　　ハイブリッド暗号化(プリミティブ: HybridEncryptとHybridDecrypt)
+　- ＊smaliファイル取得方法
+　- Ubuntu設定方法
+　- シェルの作成方法
+　　　シェルスプリクトの解説
+　
+提案手法の試作
+　- Ubuntuでの実行のやり方
+　　　使用したコマンド類
+
+実験の結果
+　- 利用されているAPIの調査結果
+　　　
+
+今後の課題（残課題）
+　- Google以外のサードパーティー製APIの調査
+　- 独自実装等のAPIの調査
+　- 
+
+まとめ
+
+参考文献
+Mobile Operating System Market Share（AndroidOS普及率）
+Android Developers. 
+河合さん論文
+
+
+
+
+\newpage
+\section{はじめに} 
+
+\newpage
+\section{前提知識}
+\subsection{Android} 
+Androidとは、Googel社が2007年に開発した、スマートフォンやタブレット端末など携帯情報機器向けのOperating Systemのこと。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を２分している。
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+\subsection{前提知識B}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+
+\newpage
+\section{関連研究} %先に書く
+\subsection{Xに関連した研究}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+\subsection{Yに関連した研究}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+
+\newpage
+\section{提案手法のメインな部分}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+
+\newpage
+\section{提案手法の試作みたいなのを書く部分}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+\newpage
+\section{試作を用いて評価}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+\newpage
+\section{まとめ}
+あああああ
+
+あああああ
+
+\begin{itemize}
+\item まずは
+\item この章のなかで書くことを
+\item 箇条書きで書き出してみる
+\item ことから始めましょう
+\end{itemize}
+
+
+
+\newpage
+\begin{thebibliography}{99}
+\bibitem{bib01}
+だれだれ, "文献1", 年度
+\bibitem{bib02}
+だれだれ, "文献2", 年度
+\bibitem{bib03}
+だれだれ, "文献3", 年度
+\bibitem{bib04}
+だれだれ, "文献4", 年度
+\bibitem{bib05}
+だれだれ, "文献5", 年度
+\bibitem{bib06}
+だれだれ, "文献6", 年度
+\bibitem{bib07}
+だれだれ, "文献7", 年度
+\bibitem{bib08}
+だれだれ, "文献8", 年度
+\bibitem{bib09}
+だれだれ, "文献9", 年度
+\bibitem{bib010}
+だれだれ, "文献10", 年度
+
+\end{thebibliography}
+
+\end{document}
