@@ -10,10 +10,9 @@
 \contentsline {subsection}{\numberline {2.8}Liuxとは}{5}%
 \contentsline {subsection}{\numberline {2.9}Ubuntu}{5}%
 \contentsline {subsection}{\numberline {2.10}シェル}{5}%
-\contentsline {subsection}{\numberline {2.11}シェルスプリクト}{5}%
-\contentsline {subsection}{\numberline {2.12}前提知識B}{5}%
+\contentsline {subsection}{\numberline {2.11}シェルスプリクト}{6}%
 \contentsline {section}{\numberline {3}関連研究}{7}%
-\contentsline {subsection}{\numberline {3.1}Xに関連した研究}{7}%
+\contentsline {subsection}{\numberline {3.1}河合らの調査}{7}%
 \contentsline {subsection}{\numberline {3.2}Yに関連した研究}{7}%
 \contentsline {section}{\numberline {4}提案手法のメインな部分}{8}%
 \contentsline {section}{\numberline {5}提案手法の試作みたいなのを書く部分}{9}%
