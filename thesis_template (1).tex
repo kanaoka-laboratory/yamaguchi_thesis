@@ -1,7 +1,19 @@
 \documentclass[a4j]{jarticle}
 \date{}
 \usepackage[dvipdfmx]{graphicx}
-
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{color}
+\usepackage{scalefnt}
+\usepackage{listings}		% ソースコード挿入を使うおまじない
+\bibliographystyle{junsrt}			% 参考文献を別ファイルにまとめてますよ
+\lstset{	% ソースコード埋め込みの設定
+	basicstyle={\small},%ソースコードの文字を小さくする
+	commentstyle={\small\itshape},%コメントアウトの文字を小さくする
+	frame=single,	% 枠線は単線
+	tabsize=4,		% タブのサイズは4
+	breaklines=true	% 自動改行
+}
 \begin{document}
 
 

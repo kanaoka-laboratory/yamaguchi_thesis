@@ -1,0 +1,9 @@
+ 0: iload_1
+ 1: iload_2
+ 2: iadd
+ 3: istore_3
+ 4: getstatic #2  // Field java/lang/System.out:Ljava/io/PrintStream;
+ 7: iload_3
+ 8: invokevirtual #3  // Method java/io/PrintStream.print:(I)V
+11: iload_3
+12: ireturn

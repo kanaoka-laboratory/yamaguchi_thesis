@@ -1,83 +1,208 @@
 \newpage
 \section{前提知識}
 
+
+%%%%%%%%%%%%%%%%%%%Android%%%%%%%%%%%%%%%%%%%%
 \subsection{Android}
-Androidとは、Googel社が2007年に開発した、スマートフォンやタブレット端末など携帯情報機器向けのOperating Systemのこと、またAndroid OSが搭載された端末のことである。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を２分している。
+Androidとは、Googel社が2007年に開発したスマートフォンやタブレット端末など携帯情報機器向けのOperating Systemのことである。またAndroid OSが搭載された端末のことである。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を２分している。
 
+
+%%%%%%%%%%%%%%%%%%%Operating System%%%%%%%%%%%%%%%%%%%%
 \subsection{Operating System}
-Operating System(以後OS)とは、ソフトウェアの種類の一つで、機器の基本的な管理や制御のための機能や、多くのソフトウェアが共通して利用する基本的な機能などを実装した、システム全体を管理するソフトウェアのことである。
+Operating System(以後OS)とは、ソフトウェアの種類の1つで、機器の基本的な管理や制御のための機能や、多くのソフトウェアが共通して利用する基本的な機能などを実装したシステム全体を管理するソフトウェアのことである。
 
+
+%%%%%%%%%%%%%%%%%%%Androidアプリケーション%%%%%%%%%%%%%%%%%%%%
 \subsection{Androidアプリケーション}
-Javaというプログラミンング言語で作成されている。
+Androidアプリケーションとは、Javaというプログラミンング言語で作成されている。
 Javaプログラムをコンパイルして機械語に変換し、画像などのリソースと合わせてapkというパッケージにすることでAndroidにインストールできるアプリである。
 
+
+%%%%%%%%%%%%%%%%%%%APK%%%%%%%%%%%%%%%%%%%%
 \subsection{APK}
-Android Application Packageの略であり、Android向けのアプリケーションをAndroid端末にインストールできる形式にパッケージにしたもの、もしくはそのファイルである。
-APKとは”.apk”という拡張子を持つが、apkファイル自体はzip形式で圧縮されており、その中にはアプリケーションの動作に必要なさまざまなファイルが納められている。
-apkのファイル形式でなければAndroid端末にアプリケーションをインストールすることができないため、Google Playなどで配信されているアプリケーションは、すべてapkファイルとして公開されている。
+APKとは、Android Application Packageの略であり、Android向けのアプリケーションをAndroid端末にインストールできる形式にパッケージにしたもの、もしくはそのファイルのことである。
+入手方法は０００に後述するAPKストアからダウンロードする方法や、単体で公開されているAPKファイルをダウンロードする方法等が存在する。
+一般的にAPKは“.apk”という拡張子を持つ。ただし、apkファイル自体はzip形式で圧縮されており、その中にはアプリケーションの動作に必要なさまざまなファイルが納められている。
+.apkファイルに対してzipファイルと同様の解凍処理を行い、得られるファイルのうち本研究に関連する項目を解説する。
+\begin{itemize}
+	\item  AndroidManifest.xml
+		\begin{itemize}
+			\item Androidアプリケーションの必要要件や、最初に起動されるアクティビティの記述がされている
+			\item zipの解凍処理により得られるAndroifManifest.xmlはバイナリファイルの状態であるため、テキストエディタ等で内容を閲覧するためにはデコード処理が必要である
+			\item デコードされたAndroidManifest.xmlの入手方法は後述する
+		\end{itemize}
+	\item classes.dex
+		\begin{itemize}
+			\item Android アプリケーションのソースファイルを変換してAndroidで実行できるようにしまとめたファイルである
+			\item 1つのdexファイルに含められるメソッドの数は65,536が上限であり、それ以上の数のメソッドが1つのAndroidアプリケーションに含まれる場合は、classes2.dex、classes3.dex…と複数ファイルに分割される
+		\end{itemize}
+\end{itemize}
 
+
+%%%%%%%%%%%%%%%%%%%バイナリファイル%%%%%%%%%%%%%%%%%%%%
+\subsection{バイナリファイル}
+バイナリファイルとは、コンピュータプログラムによって読み書きや処理を行うことを前提に、文字コードの規約を用いずに任意のビット列によって構成されるデータを格納するものである。
+一方、テキストファイルは文字コードで規定された自然言語の文字と、表示制御のための少数の制御コード
+%%（空白や改行など）
+のみを含み、人間が容易に読み書きできる。
+テキストファイルはテキストエディタなどで表示して中にどんな文字が書かれているかを読むことができるが、バイナリファイルはその形式に対応したソフトウェア以外ではまったく内容を知ることはできない。
+ただし、バイナリエディタというソフトウェアによってどのようなバイト列が並んでいるかを見ることはできる。
+
+
+%%%%%%%%%%%%%%%%%%%APKストア%%%%%%%%%%%%%%%%%%%%
 \subsection{APKストア}
-APKストアとは、Androidアプリケーション開発者の作成したAndroidアプリケーションの配信を代行するサービス、およびそれを行っているWebサイトのことである。Androidの公式APKストアは、Android の公式APKストアであるGooglePlay[10]1つのみであり,非公式のAPKストアは数多く存在する。
+APKストアとは、Androidアプリケーション開発者の作成したAndroidアプリケーションの配信を代行するサービス、およびそれを行っているWebサイトのことである。Androidの公式APKストアは、Android の公式APKストアであるGooglePlay[ ]1つのみであり,非公式のAPKストアは数多く存在する。
 
+
+%%%%%%%%%%%%%%%%%%%Android Developers%%%%%%%%%%%%%%%%%%%%
 \subsection{Android Developers}
-Android Developers とは，Android アプリケーション開発者向けのAndroid公式Webサイトのことである。Androidの詳細やドキュメントが提供されている。
+Android Developers とは、Android アプリケーション開発者向けのAndroid公式Webサイトのことである。Androidの詳細やドキュメントが提供されている。
 公式ドキュメントといった場合Android Developersを指す。
 
-\subsection{smaliファイル}
- smaliとは、AndroidのDalvik仮想マシンで使用されるアセンブリ言語Smaliで書かれた開発者ファイルである。
-通常、Androidアプリケーションに含まれている実行可能ファイルである。
-DEX（Dalvik実行可能）ファイル（.apkファイル）を逆コンパイルすることによって作成される。
-ApktoolやBaksmaliを使ってappファイルを展開するとプログラム部分のclasses.dexが展開されsmaliファイルに分かれる。
-つまり、smaliファイルとはJavaをコンパイルした後の機械語の状態のファイルである。
 
+%%%%%%%%%%%%%%%%%%%smaliファイル%%%%%%%%%%%%%%%%%%%%
+\subsection{smaliファイル}
+smaliとは、AndroidのDalvik仮想マシンで使用されるアセンブリ言語Smaliで書かれた開発者ファイルである。
+通常、Androidアプリケーションに含まれている実行可能ファイルである。
+DEX(Dalvik Executable)（Dalvik実行可能）ファイル（.apkファイル）を逆コンパイルすることによって作成される。
+smaliファイルの取得には、Apktool[ ]を用いる方法と、baksmali[ ]を用いる方法がある。
+それぞれのツールの詳細は０００で説明する。
+
+
+%%%%%%%%%%%%%%%%%%%中間言語%%%%%%%%%%%%%%%%%%%%
+\subsection{中間言語}
+中間言語とは、計算機が実行するコードを人間が理解できる形式で表現するための言語である。
+以下に本研究に関連するDalvikバイトコードについての詳細な説明を述べる。
+
+
+%%%%%%%%%%%%%%%%%%%Dalvikバイトコード%%%%%%%%%%%%%%%%%%%%
+\subsection{Dalvikバイトコード}
+Dalvikバイトコードとは、Androidにおける中間言語である。Apktool等を用いてAPKより取得できるsmaliファイルは、Dalvikバイトコードで記述されている。以下に、ソースコード 1、ソースコード2にDalvikバイトコードの例と、対応するソースコードを示す。
+
+\lstinputlisting[caption=対応するソースコード,label=BytecodeSample.java]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java}
+\lstinputlisting[caption=Dalvikバイトコードの例,label=BytecodeSample.smali]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.smali}
+
+
+%%%%%%%%%%%%%%%%%%%Liux%%%%%%%%%%%%%%%%%%%
+\subsection{Liux}
+Linuxとは、OSの一種で、パソコンを動かすのに必要な基本ソフトウェアの1つである。
+
+
+%%%%%%%%%%%%%%%%%%%Ubuntu%%%%%%%%%%%%%%%%%%%
+\subsection{Ubuntu}
+Ubuntuとは、Linux系のOSのことである。
+
+
+%%%%%%%%%%%%%%%%%%%シェル%%%%%%%%%%%%%%%%%%%
+\subsection{シェル}
+シェルとは、「オペレーティングシステムと対話するためのインターフェイス」であり、コマンドなどを制御する「環境」のことである。
+シェルがあることでコマンドを受付、OSとの対話ができるようになる。CUI(Character User Interface)環境においてシェルは最も身近なインターフェイスである。
+
+
+%%%%%%%%%%%%%%%%%%%UNIXコマンド%%%%%%%%%%%%%%%%%%%
+\subsection{UNIXコマンド}
+UNIXコマンドとは、Linux OS等のUNIXマシンにおいてCUI上からコンピュータを操作するために使用するコマンドをUNIXコマンドと呼ぶ。ファイルのコピーを行うcp、ファイルの内容を表示するcat、ディレクトリの内容を表示するlsなどが存在する。
+
+
+%%%%%%%%%%%%%%%%%%%シェルスプリクト%%%%%%%%%%%%%%%%%%%%
+\subsection{シェルスプリクト}
+シェルスプリクトとは、OSを操作するためのシェル上で実行できる簡易なプログラム言語（スプリクト言語）。また、スプリクト言語によって書かれた、複数のOSコマンドや制御文などを組み合わせたプログラム。
+shコマンドの引数としてシェルスクリプトのファイルを与えて実行すると、ファイルに記述されたUNIXコマンドが上から順に実行される。以下のシェルスクリプトを実行すると、a.txtがb.txtにコピーされ、a.txtの末尾に“hoge”という文字列が追加される。
+\lstinputlisting[caption=シェルスクリプトの例,label=ShellScriptSample.sh]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.sh}
+
+
+%%%%%%%%%%%%%%%%%%%php%%%%%%%%%%%%%%%%%%%
+\subsection{php}
+phpとは、スクリプト言語の1つであり、phpコマンドにより実行することができる。ソースコード \ref{ShellScriptSample.sh} と同じ動作をするphpプログラムを以下に示す。
+\lstinputlisting[caption=phpプログラムの例,label=BytecodeSample.smali]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/phpSample.php}
+
+
+%%%%%%%%%%%%%%%%%%%Python}%%%%%%%%%%%%%%%%%%%%
+\subsection{Python}
+Pythonとは、スクリプト言語の1つであり、pythonコマンドによって実行することができる。
+ソースコード\ref{ShellScriptSample.sh}と同じ動作をするPythonプログラムを以下に示す。
+\lstinputlisting[caption=Pythonの例,label=PythonSample]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/PythonSample.py}
+
+
+%%%%%%%%%%%%%%%%%%%正規表現%%%%%%%%%%%%%%%%%%%%
+\subsection{正規表現}
+正規表現とは、ある特定のパターンをもつ文字列を指定する表記法の１つ。
+正規表現ではメタ文字と呼ばれる特別な意味を持つ文字や記号が存在する。
+基本的なメタ文字を表
+\ref{tb:RegularExpression}
+に示す。
+ある文字列の中から通常の文字とメタ文字によって作られた特定の規則に当てはまる文字列を検索するときに利用される。正規表現の例を表
+\ref{tb:RegularExpression2}
+に示す。
+
+\begin{table}[t]
+\begin{center}
+\caption{正規表現における基本的なメタ文字の一覧}
+\begin{tabular}{ll} \hline
+. & 任意の1文字 \\
+$\ast$ & 直前のパターンの0回以上繰り返し(最長一致) \\
++ & 直前のパターンの1回以上繰り返し(最長一致) \\
+? & 直前のパターンの0～1回繰り返し(最長一致) \\ \hline
+\end{tabular}
+\label{tb:RegularExpression}
+\end{center}
+\end{table}
+
+\begin{table}[t]
+\begin{center}
+\caption{正規表現の例}
+\begin{tabular}{lll} \hline
+正規表現の例 & 正規表現の例の意味 & マッチする例 \\ \hline
+. & 任意の1文字 & a \\
+and$\ast$roid & anとdの0回以上の繰り返しとroidからなる文字列 & anroid \\
+and+roid & anとdの1回以上の繰り返しとroidからなる文字列 & anddddddroid \\
+and?roid & anとdの0回～1回の繰り返しとroidからなる文字列 & android \\ \hline
+\end{tabular}
+\label{tb:RegularExpression2}
+\end{center}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%暗号技術%%%%%%%%%%%%%%%%%%%%
 \subsection{暗号技術}
 
 \subsubsection {MD5}
-MD5は、Message Digest algorithm 5の略であり、ハッシュ値を計算するためのハッシュ関数のひとつで、RSA暗号の開発者のひとり、ロン・リベスト氏らによって開発された。IPsecや、POP before SMTPなど、さまざまなセキュリティープロトコルで使われている一方、最近になって脆弱性も指摘されている。
+MD5とは、Message Digest algorithm 5の略であり、ハッシュ値を計算するためのハッシュ関数のひとつで、RSA暗号の開発者のひとり、ロン・リベスト氏らによって開発された。IPsecや、POP before SMTPなど、さまざまなセキュリティープロトコルで使われている一方、最近になって脆弱性も指摘されている。
 
 \subsubsection {SHA-1}
-SHA-1（シャーワン）とは Secure Hash Algorithm 1の略で、入力データを一定の手順で計算を行い、入力値のデータの長さに関わらず決まった長さの文字列を出力するハッシュ関数の一つ。生成された値は「ハッシュ値」(hash value)と呼ばれる。
-SHA-1はNSA（米国家安全保障局）が考案し、1995年にNIST（米国標準技術局）によって連邦情報処理標準の一つ（FIPS 180-1）として標準化された。
+SHA-1（シャーワン）とは、Secure Hash Algorithm 1の略であり、入力データを一定の手順で計算を行い、入力値のデータの長さに関わらず決まった長さの文字列を出力するハッシュ関数の1つ。生成された値は「ハッシュ値」(hash value)と呼ばれる。
+SHA-1はNSA（米国家安全保障局）が考案し、1995年にNIST（米国標準技術局）によって連邦情報処理標準の1つ（FIPS 180-1）として標準化された。
 2005年頃から効率的に攻撃する手法がいくつか発見され十分な安全性が保たれなくなったため、近年では2001年に制定された後継のSHA-2規格への移行が進んでいる。
 
 \subsubsection{SHA-2}
-　SHA-2はハッシュ関数の計算手順（アルゴリズム）を定義しており、どんな長さのデータからも常に同じ長さのハッシュ値を生成する。
+SHA-2とは、ハッシュ関数の計算手順（アルゴリズム）を定義しており、どんな長さのデータからも常に同じ長さのハッシュ値を生成する。
 同じ原文からは必ず同じ値が得られる一方、少しでも異なる原文からはまったく違う値が得られる。
 データの伝送や複製を行なう際に、入力側と出力側でハッシュ値を求め一致すれば、途中で改竄や欠落などが起こっていないことを確認することができる。
 また、暗号や認証、デジタル署名などの要素技術として様々な場面で利用されている。　
 
 
+%%%%%%%%%%%%%%%%%%%API%%%%%%%%%%%%%%%%%%%
 \subsection{API}
-APIとはApplication Programming Interfaceの略であり、あるコンピュータプログラム（ソフトウェア）の機能や管理するデータなどを、外部の他のプログラムから呼び出して利用するための手順やデータ形式などを定めた規約である。
+APIとは、Application Programming Interfaceの略であり、あるコンピュータプログラム（ソフトウェア）の機能や管理するデータなどを、外部の他のプログラムから呼び出して利用するための手順やデータ形式などを定めた規約である。
 これは、3種類に分けられる。
 
 \subsubsection {公式API}
-Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIである。
+公式APIとは、Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIである。
 
 \subsubsection {サードパーティー製API}
 サードパーティーとは、特定のハードウェア、OS、ソフトウェア、あるいはサービスなどを対象として、それに対応する（プラットフォーム上で動作する、もしくは互換性のある）製品を販売・提供しているという意味である。
 企業が提供しているものや, 開発者が提供しているものがあるサードパーティー製APIという。
 Google社のtink(ティンク)やFacebook社のConcealn(コンシール)がある。
 
-
 \subsubsection {独自実装等のAPI}
-API開発者が既存のAPIを利用せずに独自に実装したAPIや,先述2つに含まれないものを独自実装等のAPIとする。
+API開発者が既存のAPIを利用せずに独自に実装したAPIや、先述2つに含まれないものを独自実装等のAPIとする。
 
+
+%%%%%%%%%%%%%%%%%%%APIドキュメント%%%%%%%%%%%%%%%%%%%
 \subsection{APIドキュメント}
+APIドキュメントとは、APIによる開発方法やクラス内のメソッドの使用方法を解説した説明書である。
 APIリファレンスとも呼ばれる。
-APIによる開発方法やクラス内のメソッドの使用方法を解説した説明書である。
 
-\subsection{Liux}
-LinuxとはOSの一種で、パソコンを動かすのに必要な基本ソフトウェアの1つ。
-
-\subsection{Ubuntu}
-UbuntuはLinux系のOS。
-
-\subsection{シェル}
-コンピュータのOSを構成するソフトウェアの１つで、利用者からの操作の受付や、利用者への情報の提示などを担当するもの。
-
-\subsection{シェルスプリクト}
-OSを操作するためのシェル上で実行(スプリクト言語)。また、そのような言語によって書かれた、複数のOSコマンドや制御文などを組み合わせた簡易なプログラム。一般的にはUNIX系OSのシェルで実行できるものを指す。
 
 
 

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  14 JAN 2021 16:11
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  18 JAN 2021 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -54,56 +54,122 @@ File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 \Gin@req@height=\dimen153
 \Gin@req@width=\dimen154
 )
+(c:/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count176
+\LTcapwidth=\dimen155
+\LT@head=\box61
+\LT@firsthead=\box62
+\LT@foot=\box63
+\LT@lastfoot=\box64
+\LT@cols=\count177
+\LT@rows=\count178
+\c@LT@tables=\count179
+\c@LT@chunks=\count180
+\LT@p@ftn=\toks17
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(c:/texlive/2020/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count181
+\lst@gtempboxa=\box65
+\lst@token=\toks18
+\lst@length=\count182
+\lst@currlwidth=\dimen156
+\lst@column=\count183
+\lst@pos=\count184
+\lst@lostspace=\dimen157
+\lst@width=\dimen158
+\lst@newlines=\count185
+\lst@lineno=\count186
+\lst@maxwidth=\dimen159
+
+(c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count187
+\lst@skipnumbers=\count188
+\lst@framebox=\box66
+)
+(c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
 (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2020-03-12 L3 backend support: dvips
-\l__pdf_internal_box=\box61
-\g__pdf_backend_object_int=\count176
-\l__pdf_backend_content_box=\box62
-\l__pdf_backend_model_box=\box63
-\g__pdf_backend_annotation_int=\count177
-\g__pdf_backend_link_int=\count178
-\g__pdf_backend_link_sf_int=\count179
+\l__pdf_internal_box=\box67
+\g__pdf_backend_object_int=\count189
+\l__pdf_backend_content_box=\box68
+\l__pdf_backend_model_box=\box69
+\g__pdf_backend_annotation_int=\count190
+\g__pdf_backend_link_int=\count191
+\g__pdf_backend_link_sf_int=\count192
 )
-(./thesis_template (1).aux)
+(./thesis_template (1).aux
+
+LaTeX Warning: Label `BytecodeSample.smali' multiply defined.
+
+)
 \openout1 = `"thesis_template (1).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+\c@lstlisting=\count193
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <20.74> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 35.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 35.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <20.74> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 35.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 35.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 47.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 39.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 39.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 39.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 39.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 51.
  (./thesis_template (1).toc
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
@@ -121,28 +187,54 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `"thesis_template (1).toc"'.
 
-
-(./inputTexFile/section1.tex [2]) (./inputTexFile/section2.tex [3]
+ (./inputTexFile/section1.tex [2] [3])
+(./inputTexFile/section2.tex [4]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 4.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 4.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 4.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 4.
- [4] [5])
-(./inputTexFile/section3.tex [6]) (./inputTexFile/section4.tex [7])
-(./inputTexFile/section5.tex [8]) (./inputTexFile/section6.tex [9])
-(./inputTexFile/section7.tex [10]) (./inputTexFile/section8.tex [11])
-(./inputTexFile/bibliography.tex [12]) [13] (./thesis_template (1).aux) ) 
-Here is how much of TeX's memory you used:
- 883 strings out of 481118
- 13220 string characters out of 5920166
- 257925 words of memory out of 5000000
- 16973 multiletter control sequences out of 15000+600000
- 540520 words of font info for 57 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 30i,4n,25p,393b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+ [5]
+(c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+.
+(c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
+ [6])
+(c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.smal
+i
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
+3.
+ (c:/texlive/2020/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 13.
+) [7]
+(c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.s
+h) (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/phpSample.php)
+(c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/PythonSample.py)
+[8] [9]) (./inputTexFile/section3.tex [10]) (./inputTexFile/section4.tex
+[11]) (./inputTexFile/section5.tex [12]) (./inputTexFile/section6.tex [13])
+(./inputTexFile/section7.tex [14]) (./inputTexFile/section8.tex [15])
+(./inputTexFile/bibliography.tex [16]) [17] (./thesis_template (1).aux)
 
-Output written on "thesis_template (1).dvi" (13 pages, 24200 bytes).
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2815 strings out of 481118
+ 39990 string characters out of 5920166
+ 347217 words of memory out of 5000000
+ 18839 multiletter control sequences out of 15000+600000
+ 542232 words of font info for 63 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 33i,9n,36p,390b,1746s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on "thesis_template (1).dvi" (17 pages, 44660 bytes).
