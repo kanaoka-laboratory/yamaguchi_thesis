@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  18 JAN 2021 19:50
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  19 JAN 2021 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -125,11 +125,7 @@ File: l3backend-dvips.def 2020-03-12 L3 backend support: dvips
 \g__pdf_backend_link_int=\count191
 \g__pdf_backend_link_sf_int=\count192
 )
-(./thesis_template (1).aux
-
-LaTeX Warning: Label `BytecodeSample.smali' multiply defined.
-
-)
+(./thesis_template (1).aux)
 \openout1 = `"thesis_template (1).aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -187,8 +183,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `"thesis_template (1).toc"'.
 
- (./inputTexFile/section1.tex [2] [3])
-(./inputTexFile/section2.tex [4]
+
+(./inputTexFile/section1.tex [2]) (./inputTexFile/section2.tex [3]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
@@ -197,7 +193,7 @@ LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
 (Font)              Font shape `JY1/mc/bx/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
- [5]
+ [4] [5]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
 .
@@ -206,7 +202,7 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
- [6])
+)
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.smal
 i
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
@@ -216,25 +212,19 @@ File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 13.
-) [7]
+) [6]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.s
-h) (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/phpSample.php)
-(c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/PythonSample.py)
-[8] [9]) (./inputTexFile/section3.tex [10]) (./inputTexFile/section4.tex
-[11]) (./inputTexFile/section5.tex [12]) (./inputTexFile/section6.tex [13])
-(./inputTexFile/section7.tex [14]) (./inputTexFile/section8.tex [15])
-(./inputTexFile/bibliography.tex [16]) [17] (./thesis_template (1).aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+h) [7]) (./inputTexFile/section3.tex [8] [9]) (./inputTexFile/section4.tex
+[10]) (./inputTexFile/section5.tex [11]) (./inputTexFile/section6.tex [12])
+(./inputTexFile/section7.tex [13]) (./inputTexFile/section8.tex [14])
+(./inputTexFile/bibliography.tex [15]) [16] (./thesis_template (1).aux) ) 
 Here is how much of TeX's memory you used:
- 2815 strings out of 481118
- 39990 string characters out of 5920166
- 347217 words of memory out of 5000000
- 18839 multiletter control sequences out of 15000+600000
+ 2800 strings out of 481118
+ 39429 string characters out of 5920166
+ 347154 words of memory out of 5000000
+ 18832 multiletter control sequences out of 15000+600000
  542232 words of font info for 63 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 33i,9n,36p,390b,1746s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,5n,36p,400b,1362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "thesis_template (1).dvi" (17 pages, 44660 bytes).
+Output written on "thesis_template (1).dvi" (16 pages, 41152 bytes).
