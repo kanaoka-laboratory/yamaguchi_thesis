@@ -4,7 +4,7 @@
 
 %%%%%%%%%%%%%%%%%%%Android%%%%%%%%%%%%%%%%%%%%
 \subsection{Android}
-Androidとは、Googel社が2007年に開発したスマートフォンやタブレット端末など携帯情報機器向けのOperating System、あるいはAndroid OSが搭載された端末を指す。またAndroid OSが搭載された端末のことである。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を二分している。
+Androidとは、Googel社が2007年に開発したスマートフォンやタブレット端末など携帯情報機器向けのOperating System、あるいはAndroid OSが搭載された端末を指す。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を二分している。
 
 
 %%%%%%%%%%%%%%%%%%%Operating System%%%%%%%%%%%%%%%%%%%%
@@ -12,23 +12,24 @@ Androidとは、Googel社が2007年に開発したスマートフォンやタブ
 Operating System(以後OS)とは、ソフトウェアの種類の1つで、機器の基本的な管理や制御のための機能や、多くのソフトウェアが共通して利用する基本的な機能などを実装したシステム全体を管理するソフトウェアのことである。
 
 
-%%%%%%%%%%%%%%%%%%%アプリ%%%%%%%%%%%%%%%%%%%%
-\subsection{アプリ}
-アプリとは、Application Softwareの略であり、ゲームや音楽プレイヤー、メールなど、スマートフォンのOS上で動くソフトウェアのことを言う。
+%%%%%%%%%%%%%%%%%%%アプリケーション%%%%%%%%%%%%%%%%%%%%
+\subsection{アプリケーション}
+
+アプリケーションとは、Application Softwareの略であり、ゲームや音楽プレイヤー、メールなど、スマートフォンのOS上で動くソフトウェアのことを言う。
 
 
-%%%%%%%%%%%%%%%%%%%Androidアプリケーション%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%Androidアプリ%%%%%%%%%%%%%%%%%%%%
 \subsection{Androidアプリケーション}
-Androidアプリケーションとは、Androidにインストール可能なアプリである。
-主に、JavaやKotlinというプログラミング言語で作成されている。Javaプログラムをコンパイルして機械語に変換し、
-画像などのリソースと合わせてAPKというパッケージにすることで インストール可能である。
+Androidアプリケーションとは、Androidにインストール可能なアプリケーションである。
+主に、JavaやKotlinなどのプログラミング言語で作成されている。Javaプログラムをコンパイルして機械語に変換し、
+画像などのリソースと合わせてパッケージにすることでインストール可能である。
 
 
 %%%%%%%%%%%%%%%%%%%APK%%%%%%%%%%%%%%%%%%%%
 \subsection{APK}
-APKとは、Android Application Packageの略であり、Android向けのアプリケーションをAndroid端末にインストールできる形式にパッケージにしたもの、もしくはそのファイルのことである。
+APKとは、Android Application Packageの略であり、Android向けのをAndroid端末にインストールできる形式にパッケージにしたもの、もしくはそのファイルのことである。
 入手方法は０００に後述するAPKストアからダウンロードする方法や、単体で公開されているAPKファイルをダウンロードする方法等が存在する。
-一般的にAPKは“.apk”という拡張子を持つ。ただし、.apkファイル自体はzip形式で圧縮されており、その中にはアプリケーションの動作に必要なさまざまなファイルが納められている。
+一般的にAPKは“.apk”拡張子を持つ。ただし、.apkファイル自体はzip形式で圧縮されており、その中にはアプリケーションの動作に必要なさまざまなファイルが納められている。
 .apkファイルに対してzipファイルと同様の解凍処理を行い、得られるファイルのうち本研究に関連する項目を解説する。
 \begin{itemize}
 	\item  AndroidManifest.xml
@@ -39,7 +40,7 @@ APKとは、Android Application Packageの略であり、Android向けのアプ�
 		\end{itemize}
 	\item classes.dex
 		\begin{itemize}
-			\item Android アプリケーションのソースファイルを変換してAndroidで実行できるようにしまとめたファイルである
+			\item Androidアプリケーションのソースファイルを変換してAndroidで実行できるようにしまとめたファイルである
 			\item 1つのdexファイルに含められるメソッドの数は65,536が上限であり、それ以上の数のメソッドが1つのAndroidアプリケーションに含まれる場合は、classes2.dex、classes3.dex…と複数ファイルに分割される
 		\end{itemize}
 \end{itemize}
@@ -62,7 +63,7 @@ APKストアとは、Androidアプリケーション開発者の作成したAndr
 
 %%%%%%%%%%%%%%%%%%%Android Developers%%%%%%%%%%%%%%%%%%%%
 \subsection{Android Developers}
-Android Developers とは、Android アプリケーション開発者向けのAndroid公式Webサイトのことである。Androidの詳細やドキュメントが提供されている。
+Android Developers とは、Androidアプリケーション開発者向けのAndroid公式Webサイトのことである。Androidの詳細やドキュメントが提供されている。
 公式ドキュメントといった場合Android Developersを指す。
 
 
@@ -88,23 +89,17 @@ Dalvikバイトコードとは、Androidにおける中間言語である。Apkt
 \lstinputlisting[caption=対応するソースコード,label=BytecodeSample.java]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java}
 \lstinputlisting[caption=Dalvikバイトコードの例,label=BytecodeSample.smali]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.smali}
 
-
-%%%%%%%%%%%%%%%%%%%Linux%%%%%%%%%%%%%%%%%%%
-\subsection{Linux}
-
-Linuxとは、WindowsやmacOSといったOSの1つである。CUIベースのOSであり、コマンドを実行することでPCを操作することが可能である。
-
-
 %%%%%%%%%%%%%%%%%%%CUI%%%%%%%%%%%%%%%%%%%
 \subsection{CUI}
 CUIとは、Character User Interfaceの略であり、コンピュータやソフトウェアが利用者に情報を提示したり操作を受け付けたりする方法の1つで、
 すべてのやり取りを文字によって行う方式のことである。
 
 
-%%%%%%%%%%%%%%%%%%%Ubuntu%%%%%%%%%%%%%%%%%%%
-\subsection{Ubuntu}
-UbuntuはLinux系のOSの1つである。
-このアプリは、CUIでファイル操作が可能である点や、シェルスプリクトを利用してsmaliファイルの解析をおこなえるため、本研究で利用した。
+%%%%%%%%%%%%%%%%%%%Linux%%%%%%%%%%%%%%%%%%%
+\subsection{Linux}
+Linuxとは、WindowsやmacOSといったOSの1つである。
+Linuxディストリビューションの1つにUbuntuがある。
+Ubuntuは、CUIでファイル操作が可能である点や、シェルスプリクトを利用してsmaliファイルの解析を行うために本研究で利用した。
 
 
 %%%%%%%%%%%%%%%%%%%シェル%%%%%%%%%%%%%%%%%%%
@@ -121,22 +116,59 @@ UNIXコマンドとは、Linux OS等のUNIXマシンにおいてCUI上からコ�
 %%%%%%%%%%%%%%%%%%%シェルスプリクト%%%%%%%%%%%%%%%%%%%%
 \subsection{シェルスプリクト}
 シェルスプリクトとは、OSを操作するためのシェル上で実行できる簡易なプログラム言語（スプリクト言語）のことを言う。また、スプリクト言語によって書かれた、複数のOSコマンドや制御文などを組み合わせたプログラムを指す。
-shコマンドの引数としてシェルスクリプトのファイルを与えて実行すると、ファイルに記述されたUNIXコマンドが上から順に実行される。以下のシェルスクリプトを実行すると、a.txtがb.txtにコピーされ、a.txtの末尾に“hoge”という文字列が追加される。
+shコマンドの引数としてシェルスクリプトのファイルを与えて実行すると、ファイルに記述されたUNIXコマンドが上から順に実行される。以下のシェルスクリプトを実行すると、a.txtがb.txtにコピーされ、a.txtの末尾に“hoge”の文字列が追加される。
 \lstinputlisting[caption=シェルスクリプトの例,label=ShellScriptSample.sh]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.sh}
 
+
+%%%%%%%%%%%%%%%%%%%%正規表現%%%%%%%%%%%%%%%%%%%%
+\subsection{正規表現}
+
+正規表現とは，ある文字列の規則を表現する方法である。
+正規表現ではメタ文字と呼ばれる特別な意味を持つ文字や記号が存在する。
+基本的なメタ文字を表\ref{tb:RegularExpression}に示す。
+ある文字列の中から通常の文字とメタ文字によって作られた特定の規則に当てはまる文字列を検索するときに利用される。
+正規表現の例を表\ref{tb:RegularExpression2}に示す。
+
+\begin{table}[t]
+\begin{center}
+\caption{正規表現における基本的なメタ文字の一覧}
+\begin{tabular}{ll} \hline
+. & 任意の1文字 \\
+$\ast$ & 直前のパターンの0回以上繰り返し(最長一致) \\
++ & 直前のパターンの1回以上繰り返し(最長一致) \\
+? & 直前のパターンの0～1回繰り返し(最長一致) \\ \hline
+\end{tabular}
+\label{tb:RegularExpression}
+\end{center}
+\end{table}
+
+\begin{table}[t]
+\begin{center}
+\caption{正規表現の例}
+\begin{tabular}{lll} \hline
+正規表現の例 & 正規表現の例の意味 & マッチする例 \\ \hline
+. & 任意の1文字 & a \\
+and$\ast$roid & anとdの0回以上の繰り返しとroidからなる文字列 & anroid \\
+and+roid & anとdの1回以上の繰り返しとroidからなる文字列 & anddddddroid \\
+and?roid & anとdの0回～1回の繰り返しとroidからなる文字列 & android \\ \hline
+\end{tabular}
+\label{tb:RegularExpression2}
+\end{center}
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%暗号技術%%%%%%%%%%%%%%%%%%%%
 \subsection{暗号技術}
 
 \subsubsection {MD5}
-MD5とは、Message Digest algorithm 5の略であり、ハッシュ値を計算するためのハッシュ関数の1つである。RSA暗号の開発者のひとり、ロン・リベスト氏らによって開発された。IPsecや、POP before SMTPなど、さまざまなセキュリティープロトコルで使われている一方、最近になって脆弱性も指摘されている。生成された値は「ハッシュ値」(hash value)と呼ばれる。
+MD5とは、Message Digest algorithm 5の略であり、ハッシュ値を計算するためのハッシュ関数の1つである。RSA暗号の開発者の一人、ロン・リベスト氏らによって開発された。IPsecや、POP before SMTPなど、さまざまなセキュリティプロトコルで使われている一方、最近になって脆弱性も指摘されている。
+ハッシュ関数により生成された値は「ハッシュ値」(hash value)と呼ばれる。
 
 \subsubsection {SHA-1}
-SHA-1とは、アメリカ国家安全保障局が考案し、1995年から米国政府の標準として使用されているハッシュ関数である。任意のデータから160ビットのハッシュ値を生成する。
+SHA-1とは、アメリカ国家安全保障局が考案し、1995年から米国政府の標準として使用されているハッシュ関数である。任意のデータから160bitのハッシュ値を生成する。
 2017年、GoogleがSHA-1でハッシュ値が衝突する事例[]を発見したため、より安全なハッシュ関数を使用することが推奨されている。
 
 \subsubsection{SHA-2}
-SHA-2とは、SHA-1を改良したハッシュ関数である。バリエーション豊富であり以下を総称してSHA-2と呼ばれている。
+SHA-2とは、SHA-1を改良したハッシュ関数である。このハッシュ関数は、バリエーション豊富であり以下を総称してSHA-2と呼ばれている。
 \begin{itemize}
 \item SHA-224（ハッシュ値：224bit）
 \item SHA-256（ハッシュ値：256bit）
@@ -157,6 +189,9 @@ SHA-512/224とSHA512/256についてもSHA-512で出力されたハッシュ値�
 \subsection{API}
 APIとは、Application Programming Interfaceの略であり、あるコンピュータプログラム（ソフトウェア）の機能や管理するデータなどを、外部の他のプログラムから呼び出して利用するための手順やデータ形式などを定めた規約である。
 これは、3種類に分けられる。
+詳細は、０００で説明する。
+
+\if0
 
 \subsubsection {公式API}
 公式APIとは、Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIである。
@@ -165,11 +200,12 @@ APIとは、Application Programming Interfaceの略であり、あるコンピ�
 サードパーティー製APIとは、サードパーティが提供するAPIのことである。
 サードパーティとは、特定のハードウェア、OS、ソフトウェア、あるいはサービスなどを対象として、
 それに対応する製品を販売、提供している組織や企業のことを指す。
-Google社のtinkやFacebook社のConcealnがある。
+サードパーティ製APIの例としては、Google社のtinkやFacebook社のConcealnがある。
 
 \subsubsection {独自実装等のAPI}
 API開発者が既存のAPIを利用せずに独自に実装したAPIや、先述2つに含まれないものを独自実装等のAPIと本論文では呼ぶこととする。
 
+\fi
 
 %%%%%%%%%%%%%%%%%%%APIドキュメント%%%%%%%%%%%%%%%%%%%
 \subsection{APIドキュメント}
