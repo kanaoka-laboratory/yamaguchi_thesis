@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  21 JAN 2021 16:15
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  21 JAN 2021 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -125,7 +125,44 @@ File: l3backend-dvips.def 2020-03-12 L3 backend support: dvips
 \g__pdf_backend_link_int=\count191
 \g__pdf_backend_link_sf_int=\count192
 )
-(./thesis_template (1).aux)
+(./thesis_template (1).aux
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+
+LaTeX Warning: Label `bib010' multiply defined.
+
+)
 \openout1 = `"thesis_template (1).aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -183,8 +220,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `"thesis_template (1).toc"'.
 
-
-(./inputTexFile/section1.tex [3]) (./inputTexFile/section2.tex [4]
+ (./inputTexFile/section1.tex [3])
+(./inputTexFile/section2.tex [4]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
@@ -193,11 +230,12 @@ LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
 (Font)              Font shape `JY1/mc/bx/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
- [5] [6]
+ [5]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java
+[6]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
 .
-(c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
+ (c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
@@ -217,14 +255,30 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
 h) [8] [9]) (./inputTexFile/section3.tex [10]) (./inputTexFile/section4.tex
 [11] [12]) (./inputTexFile/section5.tex [13]) (./inputTexFile/section6.tex
 [14]) (./inputTexFile/section7.tex [15]) (./inputTexFile/section8.tex [16])
-(./inputTexFile/bibliography.tex [17]) [18] (./thesis_template (1).aux) ) 
+(./inputTexFile/bibliography.tex [17]
+Overfull \hbox (10.8343pt too wide) in paragraph at lines 8--9
+[]\OT1/cmr/m/n/10 Android De-vel-op-ers, "An-droid De-vel-op-ers", https://deve
+loper.android.com/index.html?hl=ja,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]\OT1/cmr/m/n/10 Google \JY1/mc/m/n/10 が \OT1/cmr/m/n/10 SHA-1 \JY1/mc/m/n/10
+ でハ ッ シ ュ 値が衝突する事例\OT1/cmr/m/n/10 , "Google \JY1/mc/m/n/10 事
+ []
+
+) [18] (./thesis_template (1).aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2802 strings out of 481118
- 39474 string characters out of 5920166
- 347170 words of memory out of 5000000
- 18834 multiletter control sequences out of 15000+600000
+ 2806 strings out of 481118
+ 39538 string characters out of 5920166
+ 346225 words of memory out of 5000000
+ 18838 multiletter control sequences out of 15000+600000
  542232 words of font info for 63 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 33i,9n,36p,382b,1362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,9n,36p,382b,1736s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "thesis_template (1).dvi" (18 pages, 49716 bytes).
+Output written on "thesis_template (1).dvi" (18 pages, 51172 bytes).
