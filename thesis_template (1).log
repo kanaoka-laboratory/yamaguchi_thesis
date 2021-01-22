@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  22 JAN 2021 17:35
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  22 JAN 2021 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -203,25 +203,12 @@ LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
 (Font)              Font shape `JY1/mc/bx/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 51.
- (./thesis_template (1).toc
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
- [2])
+ (./thesis_template (1).toc)
 \tf@toc=\write3
 \openout3 = `"thesis_template (1).toc"'.
 
- (./inputTexFile/section1.tex [3])
-(./inputTexFile/section2.tex [4]
+ (./inputTexFile/section1.tex [2])
+(./inputTexFile/section2.tex [3]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
@@ -230,9 +217,17 @@ LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
 (Font)              Font shape `JY1/mc/bx/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
- [5]
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 38.
+ [4]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java
-[6]
+[5]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
 .
  (c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
@@ -250,10 +245,15 @@ File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 13.
-) [7]
+) [6]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.s
-h) [8] [9]) (./inputTexFile/section3.tex [10]) (./inputTexFile/section4.tex
-[11] [12]) (./inputTexFile/section5.tex [13]) (./inputTexFile/section6.tex
+h) [7]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 153.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 153.
+ [8]) (./inputTexFile/section3.tex [9]) (./inputTexFile/section4.tex
+[10] [11] [12]) (./inputTexFile/section5.tex [13]) (./inputTexFile/section6.tex
 [14]) (./inputTexFile/section7.tex [15]) (./inputTexFile/section8.tex [16])
 (./inputTexFile/bibliography.tex [17]
 Overfull \hbox (10.8343pt too wide) in paragraph at lines 11--12
@@ -293,4 +293,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  33i,9n,36p,382b,1736s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "thesis_template (1).dvi" (19 pages, 55504 bytes).
+Output written on "thesis_template (1).dvi" (19 pages, 42176 bytes).

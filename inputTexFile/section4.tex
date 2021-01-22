@@ -2,14 +2,11 @@
 
 \section{調査ターゲット(準備)}
 %%%%%%%%%%%%%%%%%%%%
-\subsection {APKの取得方法}
+\subsection {APKの取得について}
 
-
-
-%%%%%%%%%%%%%%%%%%%%
-\subsection{smaliファイル化方法}
-
-
+先行研究で河合が、APKにおいて利用されるAPIの調査対象としてAndroZooのデータセットよりAPKを411,486個用意し、APKをダウンロードした。
+APKからsmaliファイルを展開する方法として、Baksmaliを使用していた。
+本研究でも、同じAPKを使用する。
 
 %%%%%%%%%%%%%%%%%%%%
 \subsection{APK暗号技術}
@@ -55,7 +52,7 @@ APIは公式APIとは違いドキュメントが作成され
 独自実装等のAPIは今後の課題とする。
 
 %%%%%%%%%%%%%%%%%%%%
-\subsection{サードパーティ製API}
+\subsection{サードパーティ製APIの分析}
 
 %%%%%%%%%%
 \subsubsection{サードパーティ製API例}
@@ -68,10 +65,11 @@ Tinkは、Googleの暗号技術者とセキュリティエンジニアのグル�
 
 \item Conceal
 
-Concealは、Facebookが開発したライブラリである。共通鍵暗号アルゴリズム AES(256bit)と暗号利用モードGCMを用いた暗号化処理を代行する。
+Concealは、Facebookが開発したライブラリである。共通鍵暗号アルゴリズム AES(256bit)と暗号利用モードGCMを用いた暗号化処理を代行している。
 
 \end{itemize}
-Tinkは、Android OSを提供しているGoogle社によるサードパーティAPIであるため、Androidアプリケーション開発者にも利用されている可能性は高いと考えられるため本研究の調査対象とする。
+Tinkは、Android OSを提供しているGoogle社によるサードパーティ製APIであるため、Androidアプリケーション開発者にも利用されている可能性は高いと
+考えられるため本研究の調査対象とする。
 
 
 %%%%%%%%%%
@@ -88,6 +86,19 @@ Tinkは現在、それぞれのプリミティブを使って実装された、4
 Tinkには、ドキュメントが存在するので、ドキュメントが存在しない
 サードパーティ製APIよりリスト化の困難性が少ない。
 
+
+\subsubsection{それぞれのプリミティブの詳しい説明いれるか迷っている}
+暗号の説明をしていく。
+\begin{itemize}
+\item AEAD
+
+認証付暗号化方式 AEAD は，次の 3 つのアルゴリズムの組 AE = (AE-K, AE-E, AE-D) で定義される。
+
+\item MAC
+\item PublicKeySignとPublicKeyVerify
+\item HybridEncryptとHybridDecrypt
+
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%
 \subsection{APIの取得方法}
 Tinkのドキュメント\cite{Tink Cryptography}からAPIを抽出する。そのクラス（計167個）が持つ
