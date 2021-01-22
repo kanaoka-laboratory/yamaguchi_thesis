@@ -1,10 +1,11 @@
 \newpage
 \section{前提知識}
 
+本研究における前提知識を解説する。
 
 %%%%%%%%%%%%%%%%%%%Android%%%%%%%%%%%%%%%%%%%%
 \subsection{Android}
-Androidとは、Googel社が2007年に開発したスマートフォンやタブレット端末など携帯情報機器向けのOperating System、あるいはAndroid OSが搭載された端末を指す。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を二分している。
+Androidとは、Googel社が2007年に開発したスマートフォンやタブレット端末など携帯情報機器向けのOperating System、あるいはAndroid OSが搭載された端末を指す。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を二分している\cite{StatCounter Global Stats}。
 
 
 %%%%%%%%%%%%%%%%%%%Operating System%%%%%%%%%%%%%%%%%%%%
@@ -74,7 +75,7 @@ Android Developers とは、Androidアプリケーション開発者向けのAnd
 smaliとは、AndroidのDalvik仮想マシンで使用される開発者ファイルである。
 通常、Androidアプリケーションに含まれている実行可能ファイルである。
 DEX(Dalvik Executable)（Dalvik実行可能）ファイル（.apkファイル）を逆コンパイルすることによって作成される。
-smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、baksmali\cite{Baksmali}を用いる方法がある。
+smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、Baksmali\cite{Baksmali}を用いる方法がある。
 %それぞれのツールの詳細は０００で説明する。
 
 
@@ -85,7 +86,7 @@ smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、
 
 
 %%%%%%%%%%%%%%%%%%%Dalvikバイトコード%%%%%%%%%%%%%%%%%%%%
-\subsection{Dalvikバイトコード}
+\subsubsection{Dalvikバイトコード}
 Dalvikバイトコードとは、Androidにおける中間言語である。Apktool等を用いてAPKより取得できるsmaliファイルは、Dalvikバイトコードで記述されている。以下に、ソースコード 1、ソースコード2にDalvikバイトコードの例と、対応するソースコードを示す。
 
 \lstinputlisting[caption=対応するソースコード,label=BytecodeSample.java]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java}
@@ -167,7 +168,7 @@ MD5とは、Message Digest algorithm 5の略であり、ハッシュ値を計算
 
 \subsubsection {SHA-1}
 SHA-1とは、アメリカ国家安全保障局が考案し、1995年から米国政府の標準として使用されているハッシュ関数である。任意のデータから160bitのハッシュ値を生成する。
-2017年、GoogleがSHA-1でハッシュ値が衝突する事例\cite{Google事例}を発見したため、より安全なハッシュ関数を使用することが推奨されている。
+2017年、GoogleがSHA-1でハッシュ値が衝突する事例\cite{INTERNET Watch}を発見したため、より安全なハッシュ関数を使用することが推奨されている。
 
 \subsubsection{SHA-2}
 SHA-2とは、SHA-1を改良したハッシュ関数である。このハッシュ関数は、バリエーション豊富であり以下を総称してSHA-2と呼ばれている。

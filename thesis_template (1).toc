@@ -10,19 +10,19 @@
 \contentsline {subsection}{\numberline {2.8}Android Developers}{6}%
 \contentsline {subsection}{\numberline {2.9}smaliファイル}{6}%
 \contentsline {subsection}{\numberline {2.10}中間言語}{6}%
-\contentsline {subsection}{\numberline {2.11}Dalvikバイトコード}{7}%
-\contentsline {subsection}{\numberline {2.12}CUI}{7}%
-\contentsline {subsection}{\numberline {2.13}Linux}{7}%
-\contentsline {subsection}{\numberline {2.14}シェル}{8}%
-\contentsline {subsection}{\numberline {2.15}UNIXコマンド}{8}%
-\contentsline {subsection}{\numberline {2.16}シェルスプリクト}{8}%
-\contentsline {subsection}{\numberline {2.17}正規表現}{8}%
-\contentsline {subsection}{\numberline {2.18}暗号技術}{9}%
-\contentsline {subsubsection}{\numberline {2.18.1}MD5}{9}%
-\contentsline {subsubsection}{\numberline {2.18.2}SHA-1}{9}%
-\contentsline {subsubsection}{\numberline {2.18.3}SHA-2}{9}%
-\contentsline {subsection}{\numberline {2.19}API}{10}%
-\contentsline {subsection}{\numberline {2.20}APIドキュメント}{10}%
+\contentsline {subsubsection}{\numberline {2.10.1}Dalvikバイトコード}{7}%
+\contentsline {subsection}{\numberline {2.11}CUI}{7}%
+\contentsline {subsection}{\numberline {2.12}Linux}{7}%
+\contentsline {subsection}{\numberline {2.13}シェル}{8}%
+\contentsline {subsection}{\numberline {2.14}UNIXコマンド}{8}%
+\contentsline {subsection}{\numberline {2.15}シェルスプリクト}{8}%
+\contentsline {subsection}{\numberline {2.16}正規表現}{8}%
+\contentsline {subsection}{\numberline {2.17}暗号技術}{9}%
+\contentsline {subsubsection}{\numberline {2.17.1}MD5}{9}%
+\contentsline {subsubsection}{\numberline {2.17.2}SHA-1}{9}%
+\contentsline {subsubsection}{\numberline {2.17.3}SHA-2}{9}%
+\contentsline {subsection}{\numberline {2.18}API}{10}%
+\contentsline {subsection}{\numberline {2.19}APIドキュメント}{10}%
 \contentsline {section}{\numberline {3}関連研究}{11}%
 \contentsline {subsection}{\numberline {3.1}河合らの調査}{11}%
 \contentsline {subsection}{\numberline {3.2}Yに関連した研究}{11}%
@@ -33,9 +33,9 @@
 \contentsline {subsubsection}{\numberline {4.3.1}公式API}{12}%
 \contentsline {subsubsection}{\numberline {4.3.2}サードパーティー製API}{12}%
 \contentsline {subsubsection}{\numberline {4.3.3}独自実装等のAPI}{12}%
-\contentsline {subsection}{\numberline {4.4} }{12}%
-\contentsline {subsection}{\numberline {4.5}サードパーティー製APIの種類}{13}%
-\contentsline {subsubsection}{\numberline {4.5.1}Tink}{13}%
+\contentsline {subsection}{\numberline {4.4}APIの分析}{12}%
+\contentsline {subsection}{\numberline {4.5}}{13}%
+\contentsline {subsubsection}{\numberline {4.5.1}Tinkの分析}{13}%
 \contentsline {subsection}{\numberline {4.6}APIの取得方法}{13}%
 \contentsline {section}{\numberline {5}調査手法}{14}%
 \contentsline {section}{\numberline {6}調査結果}{15}%
