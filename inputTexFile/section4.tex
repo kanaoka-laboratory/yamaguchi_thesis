@@ -1,26 +1,38 @@
 \newpage
 
-\section{調査ターゲット(準備)}
+\section{調査対象と手法}
 %%%%%%%%%%%%%%%%%%%%
-\subsection {APKの取得について}
+\subsection {APKの取得}
 
-先行研究で河合が、APKにおいて利用されるAPIの調査対象としてAndroZooのデータセットよりAPKを411,486個用意し、APKをダウンロードした。
-APKからsmaliファイルを展開する方法として、Baksmaliを使用していた。
+APKにおいて利用されるAPIの調査対象としてAndroZooのデータセットよりAPKを411,486個用意し、APKをダウンロードした。
+APKからsmaliファイルを展開する方法として、Apktoolを使用していた。
 本研究でも、同じAPKを使用する。
 
+
+AndroZooの参考文献
+
 %%%%%%%%%%%%%%%%%%%%
-\subsection{APK暗号技術}
-　APKに使われている暗号技術は大きく分けて３種類ある。
+\subsection{Android APIの分類}
+APKに使われている暗号技術は大きく分けて3種類ある。
 
 %%%%%%%%%%
 　\subsubsection {公式API}
-公式APIとは、Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIである。
+
+%if0
+・Androidでは、ソフトウェア開発のために必要なプログラムやライブラリをGoogle社がAndroid SDKとして提供してる
+・SDKで提供されるライブラリはAndroid開発者向けサイトAndroid DevelopersにAPIリファレンスとして記載されてる
+・この研究ではここに記載されてるAPIを「公式API」と呼ぶことにするよ
+%fi
+Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIのことを本研究では公式APIと呼ぶこととする。
 
 %%%%%%%%%%
 　\subsubsection {サードパーティー製API}
 サードパーティー製APIとは、サードパーティが提供するAPIのことである。
 サードパーティとは、特定のハードウェア、OS、ソフトウェア、あるいはサービスなどを対象として、
 それに対応する製品を販売、提供している組織や企業のことを指す。
+%if0
+・AndroidにもサードパーティAPIが多くあるよ。
+%fi
 
 %%%%%%%%%%
 　\subsubsection {独自実装等のAPI}
@@ -67,6 +79,10 @@ Tinkは、Googleの暗号技術者とセキュリティエンジニアのグル�
 
 Concealは、Facebookが開発したライブラリである。共通鍵暗号アルゴリズム AES(256bit)と暗号利用モードGCMを用いた暗号化処理を代行している。
 
+\item　geduldig 
+
+ 
+Geduldig は、Twitterが開発した
 \end{itemize}
 Tinkは、Android OSを提供しているGoogle社によるサードパーティ製APIであるため、Androidアプリケーション開発者にも利用されている可能性は高いと
 考えられるため本研究の調査対象とする。
@@ -92,9 +108,11 @@ Tinkには、ドキュメントが存在するので、ドキュメントが存�
 \begin{itemize}
 \item AEAD
 
-認証付暗号化方式 AEAD は，次の 3 つのアルゴリズムの組 AE = (AE-K, AE-E, AE-D) で定義される。
+AEADは、次の 3 つのアルゴリズムの組 AE = (AE-K, AE-E, AE-D) で定義される。
 
 \item MAC
+
+メッセージ認証コードMACは、Message Authentication Codeの略であり、ネットワークを通じて伝送されたメッセージが途中で改竄されていないかを確認することである。
 
 \item PublicKeySignとPublicKeyVerify
 

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  25 JAN 2021 11:39
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  25 JAN 2021 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -253,9 +253,9 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
 ) [7]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.s
 h) [8] [9]) (./inputTexFile/section3.tex [10]) (./inputTexFile/section4.tex
-[11] [12] [13]) (./inputTexFile/section5.tex [14]) (./inputTexFile/section6.tex
-[15]) (./inputTexFile/section7.tex [16]) (./inputTexFile/section8.tex [17])
-(./inputTexFile/bibliography.tex [18]
+[11] [12] [13]) (./inputTexFile/section6.tex [14]) (./inputTexFile/section7.tex
+[15]) (./inputTexFile/section8.tex [16]) (./inputTexFile/bibliography.tex
+[17]
 Overfull \hbox (10.8343pt too wide) in paragraph at lines 11--12
 []\OT1/cmr/m/n/10 Android De-vel-op-ers, "An-droid De-vel-op-ers", https://deve
 loper.android.com/index.html?hl=ja,
@@ -279,18 +279,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 5.0/,  \JY1/mc/m/n/10 （ 参照 \OT1/cmr/m/n/10 2021-01-
  []
 
-[19]) [20] (./thesis_template (1).aux)
+[18]) [19] (./thesis_template (1).aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2808 strings out of 481118
- 39587 string characters out of 5920166
- 346233 words of memory out of 5000000
- 18840 multiletter control sequences out of 15000+600000
+ 2804 strings out of 481118
+ 39498 string characters out of 5920166
+ 348233 words of memory out of 5000000
+ 18839 multiletter control sequences out of 15000+600000
  542232 words of font info for 63 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 33i,9n,36p,382b,1736s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,9n,36p,373b,1736s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "thesis_template (1).dvi" (20 pages, 59260 bytes).
+Output written on "thesis_template (1).dvi" (19 pages, 59244 bytes).

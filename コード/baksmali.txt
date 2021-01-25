@@ -1,0 +1,16 @@
+Lcom/foo/bar/BuildConfig;
+Lcom/foo/bar/MainActivity$1;
+Lcom/foo/bar/MainActivity$2;
+Lcom/foo/bar/MainActivity$3;
+Lcom/foo/bar/MainActivity$4;
+Lcom/foo/bar/MainActivity$5;
+Lcom/foo/bar/MainActivity;
+Lcom/foo/bar/R$attr;
+Lcom/foo/bar/R$color;
+Lcom/foo/bar/R$dimen;
+Lcom/foo/bar/R$drawable;
+Lcom/foo/bar/R$id;
+Lcom/foo/bar/R$layout;
+Lcom/foo/bar/R$string;
+Lcom/foo/bar/R$style;
+Lcom/foo/bar/R;

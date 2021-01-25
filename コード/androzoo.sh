@@ -1,0 +1,1 @@
+curl -O --remote-header-name -G -d apikey=<<API Key>> -d sha256=<<そのAPKファイルのSHA256ハッシュ値>> https://androzoo.uni.lu/api/download -w %{size_download}
