@@ -3,50 +3,121 @@
 本研究における関連研究を紹介する。
 \subsection{河合らの調査}
 河合による調査は、Androidアプリケーションを調査対象とし、Androidアプリケーションの暗号技術利用に関する現状を明らかにするために、
-401,971個APKより展開されたsmaliファイルと4,324個の公式APIより取得した暗号・セキュリティに関するクラスが持つメソッドのリストを使用し、
+401,971個のAPKより展開されたsmaliファイルと4,324個のAndroid DevelopersのAPIリファレンスに記載されているAPIより取得した暗号・セキュリティに関するクラスが持つメソッドのリストを使用し、
 暗号で用いられるメソッド名や特徴のある用語によるフィルタリングアルゴリズムが指定可能な代表的箇所の抽出やAPIの利用傾向分析の調査を行った。
-%メソッドリスト表いれるつもり
+%メソッドリスト表いれるべき？？
 
-調査結果として、調査対象の APK群に最も利用された数が多かったメソッドは
+
+各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件を表\ref{tb:api}に示す。
+調査対象の APK群に最も利用された数が多かったメソッドは
 android.net.Uri.parse(java.lang.String) の248,145個
 であり、次がjava.net.URL.URL(java.lang.String)の120,601個であった。
+
+
 調査対象のAPK群に利用された数が多かったメソッドの上位はjava.netやandroid.netといったネットワークに関わるもの
-であり、調査対象のAPK群のうち61.73％のAPKがandroid.net.Uri.parse(java.lang.String)を使用しており、
+であり、調査対象のAPK群のうち61.73\%のAPKがandroid.net.Uri.parse(java.lang.String)を使用しており、
 何かしらの通信を行っていると考えられる。
-\if
+
 android.net.Uri.parse(java.lang.String)を暗号・セキュリティに関する各APIにおける
 調査対象のAPK群の中で
 そのAPIを少なくとも1回は利用した回数と
 そのAPIが少なくとも1回は利用されている確率の
-上位10件を% 
+上位10件を表\ref{tb:graph_cipher}
 に示す。
-\fi
 
 暗号・セキュリティに関するメソッドとして、
 java.security.MessageDigest.digest()の43,418個が最も利用されており、
 次にjava.security.MessageDigest.getInstance(java.lang.String)の37,405個であった。
+
+
 java.security.MessageDigestクラスは主にSHA-1やSHA-256といったアルゴリズムを使用したハッシュ値を提供するものである。
-調査対象のAPK群のうち10.80％がハッシュ値を利用していることがわかる。
+調査対象のAPK群のうち10.80\%がハッシュ値を利用していることがわかった。
 また、
-javax.crypto.spec.SecretKeySpec.SecretKeySpec(byte[],java.lang.String)が%表11
+javax.crypto.spec.SecretKeySpec.SecretKeySpec(byte[],java.lang.String)表\ref{tb:graph_cipher}
 でメッセージダイジェストに関するクラスの次に利用数が多い。
 javax.crypto.spec.SecretKeySpecクラスは秘密鍵に関する機能を提供するクラスである。
 調査対象のAPK群において最も利用されている暗号化方式は公開鍵暗号であることが考えられる使用しており、
 何かしらの通信を行っていると考えられる。
 
 
+\begin{table}[t]
+\begin{center}
+\caption{各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件}
+\begin{tabular}{lrrr} \hline
+メソッド名 & APK数(個) & 
+\begin{tabular}{c}メソッド\\利用確率\\P(A)(％) \end{tabular} \\ \hline
+~~android.net.Uri.parse(java.lang.String) & 248,145  & 61.73  \\
+~~java.net.URL.URL(java.lang.String) & 120,601  & 30.00  \\
+~~java.net.URL.openConnection() & 104,936  & 26.11  \\
+\begin{tabular}{l}android.net.ConnectivityManager\\~~~~.getActiveNetworkInfo()\end{tabular} & 83,050  & 20.66  \\
+~~android.net.Uri.fromFile(java.io.File) & 82,428  & 20.51  \\
+\begin{tabular}{l}java.net.HttpURLConnection\\~~~~.getResponseCode()\end{tabular} & 63,770  & 15.86  \\
+~~android.net.NetworkInfo.isConnected() & 61,452  & 15.29  \\
+~~android.net.Uri.toString() & 58,250  & 14.49  \\
+~~java.net.HttpURLConnection.disconnect() & 53,782  & 13.38  \\
+\begin{tabular}{l}java.net.HttpURLConnection\\~~~~.setRequestMethod(java.lang.String)\end{tabular} & 52,515  & 13.06  \\ \hline
+\end{tabular}
+\label{tb:api}
+\end{center}
+\end{table}
+
+\begin{table}[t]
+\begin{center}
+\caption{暗号・セキュリティに関する各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件}
+\begin{tabular}{lrrr} \hline
+メソッド名 & APK数(個) & 
+\begin{tabular}{c}メソッド\\利用確率\\P(A)(％) \end{tabular} \\ \hline
+~~java.security.MessageDigest.digest() & 43,418 & 10.80 \\
+\begin{tabular}{l}java.security.MessageDigest\\~~~~.getInstance(java.lang.String)\end{tabular} & 37,405 & 9.31 \\
+~~java.security.MessageDigest.reset() & 28,357 & 7.05 \\
+~~java.security.MessageDigest.update(byte[],int,int) & 20,004 & 4.98\\
+\begin{tabular}{l}javax.crypto.spec.SecretKeySpec\\~~~~.SecretKeySpec(byte[],java.lang.String)\end{tabular} & 15,829 & 3.94 \\
+\begin{tabular}{l}java.security.KeyFactory\\~~~~.generatePublic(java.security.spec.KeySpec)\end{tabular} & 15,009 & 3.73 \\
+\begin{tabular}{l}java.security.spec.X509EncodedKeySpec\\~~~~.X509EncodedKeySpec(byte[])\end{tabular} & 14,662 & 3.65 \\
+~~java.security.SecureRandom.SecureRandom() & 13,759 & 3.42 \\
+~~java.security.MessageDigest.digest(byte[]) & 13,414 & 3.34 \\
+~~javax.crypto.Cipher.doFinal(byte[]) & 13,009 & 3.24 \\ \hline
+\end{tabular}
+\label{tb:graph_cipher}
+\end{center}
+\end{table}
+
+
+
+
+河合による先行研究ではこの上記のような結果が得られたが、 この研究ではAndroid Developersに記載されている公式のAPIについての調査以外は
+行われていないので、暗号利用動向の網羅的調査のために今後これらの更なる調査、分析が必要である。
 
 
 
 
 
-しかし、河合による先行研究では Android Developersに記載されている公式のAPIについての調査以外は
-行っていない。暗号利用動向の網羅的調査のために今後これらの更なる調査、分析が必要である。
 
-\if0
-・何を分析した
-・分析結果からなにが得られたのか
-それを踏まえて、
-・ここが足りない
-という意味での「APIの調査しか行われていない」にする
-\fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

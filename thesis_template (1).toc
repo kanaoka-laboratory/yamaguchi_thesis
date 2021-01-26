@@ -27,17 +27,17 @@
 \contentsline {section}{\numberline {3}関連研究}{11}%
 \contentsline {subsection}{\numberline {3.1}河合らの調査}{11}%
 \contentsline {section}{\numberline {4}調査対象と手法}{12}%
-\contentsline {subsection}{\numberline {4.1}APKの取得}{12}%
+\contentsline {subsection}{\numberline {4.1}smaliファイル}{12}%
 \contentsline {subsection}{\numberline {4.2}Android APIの分類}{12}%
 \contentsline {subsubsection}{\numberline {4.2.1}公式API}{12}%
 \contentsline {subsubsection}{\numberline {4.2.2}サードパーティー製API}{12}%
-\contentsline {subsubsection}{\numberline {4.2.3}独自実装等のAPI}{12}%
-\contentsline {subsection}{\numberline {4.3}APIの分析}{12}%
-\contentsline {subsection}{\numberline {4.4}サードパーティ製APIの分析}{13}%
-\contentsline {subsubsection}{\numberline {4.4.1}サードパーティ製API例}{13}%
-\contentsline {subsubsection}{\numberline {4.4.2}Tinkの分析}{13}%
-\contentsline {subsubsection}{\numberline {4.4.3}それぞれのプリミティブの詳しい説明いれるか迷っている}{13}%
+\contentsline {subsubsection}{\numberline {4.2.3}独自実装等のAPI}{13}%
+\contentsline {subsection}{\numberline {4.3}APIの分析}{13}%
+\contentsline {subsection}{\numberline {4.4}サードパーティ製APIの分析}{14}%
+\contentsline {subsubsection}{\numberline {4.4.1}サードパーティ製APIの例}{14}%
+\contentsline {subsubsection}{\numberline {4.4.2}Tinkの分析}{14}%
 \contentsline {subsection}{\numberline {4.5}APIの取得方法}{14}%
-\contentsline {section}{\numberline {5}調査結果}{15}%
-\contentsline {section}{\numberline {6}今後の課題}{16}%
-\contentsline {section}{\numberline {7}まとめ}{17}%
+\contentsline {subsection}{\numberline {4.6}APIリストとsmaliファイルで利用されるメソッドのマッチング調査}{15}%
+\contentsline {section}{\numberline {5}調査結果と考察}{16}%
+\contentsline {section}{\numberline {6}今後の課題}{17}%
+\contentsline {section}{\numberline {7}まとめ}{18}%

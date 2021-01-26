@@ -1,12 +1,11 @@
 \newpage
-\section{調査結果}
-- APKで暗号、セキュリティに関するAPIがどれぐらい使われているのか（割合）
-　- アルゴリズムを指定して取得できた中で最も使われているもの（回数）
-　- 今回の調査結果と河合さんの結果との比較
-
-\begin{itemize}
-\item まずは
-\item この章のなかで書くことを
-\item 箇条書きで書き出してみる
-\item ことから始めましょう
-\end{itemize}
+\section{調査結果と考察}
+調査の結果、Tinkを利用しているのはパッケージ名が”mobi.zapzap”のAPKだけであった。
+このAPKでは、AndroidKeysetManagerクラスとそのメソッドが使用されている。
+このアプリケーション名は、”ZapZap - Mobile Wallet”\cite{}であり日本では
+サービスしていないAndroid版モバイルアプリケーションである。
+使用されているAPIの分析から設
+定値を保存するSharedPreferencesへのアクセスにTink上のAndroidKeysetManagerクラスとそのメソッドを使用しているため、
+暗号技術そのものとしてTinkは使用されていないと考えられる。
+Tink利用がAndroid公式 API よりも大幅に少ない理由として、Tink1.0.0のリリース開始が2017年9月と最近である点と、
+Androidでは公式APIの利用が中心的である点が考えられる。
