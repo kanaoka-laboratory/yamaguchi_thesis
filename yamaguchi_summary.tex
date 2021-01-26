@@ -53,15 +53,14 @@ Androidアプリケーションにおけるサードパーティー製APIでの�
 
 独自実装等のAPIはドキュメントが公開されている可能性が低いためAPIのリスト化が困難である。これは、RSAやECC、Cryptoといった暗号、セキュリティに関するキーワードをAPIのリストの代わりとし検索する必要があるためAPKの網羅的調査を行う上で困難である。比較して、サードパーティー製APIではドキュメントが公開されているものもあるのでリスト化の困難性が少ない。そこで、本研究では特にサードパーティー製APIを分析対象とする。
 
-サードパーティ製APIの例としては、Google社のTink\cite{Tink}やFacebook社のConceal\cite{Conceal}、Twitter社のGeduldig\cite{Geduldig}がある。
-この中でもTink は、Android OS を提供している Google 社によるサードパーティ製 API であるため、Android
+サードパーティ製APIの例としては、Google社のTink\cite{Tink}やFacebook社のConceal\cite{Conceal}、Twitter社のGeduldig\cite{Geduldig}がある。この中でもTink は、Android OS を提供している Google 社によるサードパーティ製 API であるため、Android
 アプリケーション開発者にも利用されている可能性は高いと考えられるので本研究の調査対象とする。
 
 Tinkは現在、AEAD(関連データを備えた認証付き暗号)、MAC(メッセージ認証コード)、
 PublicKeySignとPublicKeyVerify(ディジタル署名)、HybridEncryptとHybridDecrypt(ハイブリッド暗号化)の
 4つのプリミティブを使用して実装された暗号化操作を提供している。
 また、Tinkはドキュメントが公開されている。
-このドキュメントから、全クラスのページから705個のMethod部分のリスト化を行った。
+このドキュメントの全クラスのページから705個のMethod部分のリスト化を行った。
 
 APKにおいて利用されるAPIのマッチング調査の対象として、AndroZoo\cite{AndroZoo}のデータセットより411,486個のAPKから展開に成功した401,971個のsmaliファイルを使用する。
 

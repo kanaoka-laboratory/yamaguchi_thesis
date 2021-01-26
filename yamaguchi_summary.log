@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  25 JAN 2021 20:52
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  26 JAN 2021 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -80,50 +80,50 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 86.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 86.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 86.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 86.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 85.
 
-Overfull \hbox (16.33394pt too wide) in paragraph at lines 92--93
+Overfull \hbox (16.33394pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/n/10 https://developer.android.com/index.html?hl=ja,
  []
 
 
-Overfull \hbox (3.38948pt too wide) in paragraph at lines 95--96
+Overfull \hbox (3.38948pt too wide) in paragraph at lines 94--95
 []\OT1/cmr/m/n/10 Tink, "Tink", https://github.com/google/tink,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 []\OT1/cmr/m/n/10 Conceal, "Con-ceal",
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 \OT1/cmr/m/n/10 https://github.com/facebookarchive/conceal,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 []\OT1/cmr/m/n/10 Geduldig, "Geduldig",
  []
 
 
-Underfull \hbox (badness 5592) in paragraph at lines 104--105
+Underfull \hbox (badness 5592) in paragraph at lines 103--104
 []\OT1/cmr/m/n/10 Universit^^Se du Lux-em-bourg, "An-dro-Zoo",
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 []\OT1/cmr/m/n/10 ZapZap, "Za-pZap
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 \OT1/cmr/m/n/10 ",https://www.zapzapwallet.com/, \JY1/mc/m/n/10 （ 参照
  []
 
@@ -139,4 +139,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  25i,7n,22p,585b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on yamaguchi_summary.dvi (2 pages, 9000 bytes).
+Output written on yamaguchi_summary.dvi (2 pages, 8988 bytes).
