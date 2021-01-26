@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {2.7}Android Developers}{6}%
 \contentsline {subsection}{\numberline {2.8}smaliファイル}{6}%
 \contentsline {subsection}{\numberline {2.9}中間言語}{6}%
-\contentsline {subsubsection}{\numberline {2.9.1}Dalvikバイトコード}{7}%
+\contentsline {subsubsection}{\numberline {2.9.1}Dalvikバイトコード}{6}%
 \contentsline {subsection}{\numberline {2.10}CUI}{7}%
 \contentsline {subsection}{\numberline {2.11}Linux}{7}%
 \contentsline {subsection}{\numberline {2.12}Linuxカーネル}{7}%
@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {4.4}サードパーティ製APIの分析}{13}%
 \contentsline {subsubsection}{\numberline {4.4.1}サードパーティ製API例}{13}%
 \contentsline {subsubsection}{\numberline {4.4.2}Tinkの分析}{13}%
-\contentsline {subsubsection}{\numberline {4.4.3}それぞれのプリミティブの詳しい説明いれるか迷っている}{14}%
+\contentsline {subsubsection}{\numberline {4.4.3}それぞれのプリミティブの詳しい説明いれるか迷っている}{13}%
 \contentsline {subsection}{\numberline {4.5}APIの取得方法}{14}%
 \contentsline {section}{\numberline {5}調査結果}{15}%
 \contentsline {section}{\numberline {6}今後の課題}{16}%

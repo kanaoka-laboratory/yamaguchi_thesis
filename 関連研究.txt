@@ -18,18 +18,35 @@ Androidアプリケーションの暗号技術利用に関する現状を明ら�
 公式APIを対象に利用されているAPIの分析を行っていた。
 調査結果としては、
 
-調査対象の APK
-群に最も利用された数が多かったメソッドは android.net.Uri.parse(java.lang.String) の 248,145 個
-であり，次が java.net.URL.URL(java.lang.String) の 120,601 個であった．調査対象の APK 群に
-利用された数が多かったメソッドの上位は java.net や android.net といったネットワークに関わる
-ものであり，調査対象の APK 群のうち 61.73%の APK が android.net.Uri.parse(java.lang.String)
-を暗号・セキュリティに関する各 API における調査対象の APK 群の中でその API を少なくとも 1 回
-は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件を表11に示す．暗号・
-セキュリティに関するメソッドとして，java.security.MessageDigest.digest() の 43,418 個が最も利用
-されており，次点は java.security.MessageDigest.getInstance(java.lang.String) の 37,405 個であっ
-た．java.security.MessageDigest クラスは主に SHA-1 や SHA-256 といったアルゴリズムを使用した
-ハッシュ値を提供するものである．調査対象の APK 群のうち 10.80%がハッシュ値を利用しているこ
-とがわかる．また，javax.crypto.spec.SecretKeySpec.SecretKeySpec(byte[],java.lang.String) が表
-11でメッセージダイジェストに関するクラスの次に利用数が多い．javax.crypto.spec.SecretKeySpec
-クラスは秘密鍵に関する機能を提供するクラスである．調査対象の APK 群において最も利用され
-ている暗号化方式は公開鍵暗号であることが考えられる使用しており，何かしらの通信を行っていると考えられる
+調査対象の APK群に最も利用された数が多かったメソッドは android.net.Uri.parse(java.lang.String) の 248,145 個
+であり，
+次が 
+java.net.URL.URL(java.lang.String) の 120,601 個であった．
+調査対象の APK 群に利用された数が多かったメソッドの上位は
+ java.net や android.net といったネットワークに関わるもの
+であり，
+調査対象の APK 群のうち
+ 61.73%の APK が android.net.Uri.parse(java.lang.String)を使用しており，
+何かしらの通信を行っていると考えられる． 
+
+android.net.Uri.parse(java.lang.String)を暗号・セキュリティに関する各 API における
+調査対象の APK 群の中で
+その API を少なくとも 1 回は利用した回数と
+そのAPIが少なくとも1回は利用されている確率の
+上位10件を表11に示す
+
+暗号・セキュリティに関するメソッドとして，
+java.security.MessageDigest.digest() の 43,418 個が最も利用されており，
+次点は java.security.MessageDigest.getInstance(java.lang.String) の 37,405 個であった．
+
+java.security.MessageDigest クラスは主に SHA-1 や SHA-256 といったアルゴリズムを使用したハッシュ値を提供するものである．
+調査対象の APK 群のうち 10.80%がハッシュ値を利用していることがわかる．
+また，
+javax.crypto.spec.SecretKeySpec.SecretKeySpec(byte[],java.lang.String) が表11で
+メッセージダイジェストに関するクラスの次に利用数が多い．
+javax.crypto.spec.SecretKeySpecクラスは秘密鍵に関する機能を提供するクラスである．
+調査対象の APK 群において最も利用されている暗号化方式は公開鍵暗号であることが考えられる使用しており，
+何かしらの通信を行っていると考えられる
+
+本研究では Android Developers に記載されている公式の API についての調査以外は
+行っていない．暗号利用動向の網羅的調査のために今後これらの更なる調査，分析が必要である．

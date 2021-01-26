@@ -29,7 +29,7 @@ Androidアプリケーションとは、Androidにインストール可能なア
 %%%%%%%%%%%%%%%%%%%APK%%%%%%%%%%%%%%%%%%%%
 \subsection{APK}
 APKとは、Android Application Packageの略であり、Android向けのをAndroid端末にインストールできる形式にパッケージにしたもの、もしくはそのファイルのことである。
-入手方法は０００に後述するAPKストアからダウンロードする方法や、単体で公開されているAPKファイルをダウンロードする方法等が存在する。
+入手方法はAPKストアからダウンロードする方法や、単体で公開されているAPKファイルをダウンロードする方法等が存在する。
 一般的にAPKは“.apk”拡張子を持つ。ただし、.apkファイル自体はzip形式で圧縮されており、その中にはアプリケーションの動作に必要なさまざまなファイルが納められている。
 .apkファイルに対してzipファイルと同様の解凍処理を行い、得られるファイルのうち本研究に関連する項目を解説する。
 \begin{itemize}
@@ -37,11 +37,11 @@ APKとは、Android Application Packageの略であり、Android向けのをAndr
 		\begin{itemize}
 			\item Androidアプリケーションの必要要件や、最初に起動されるアクティビティの記述がされている
 			\item zipの解凍処理により得られるAndroifManifest.xmlはバイナリファイルの状態であるため、テキストエディタ等で内容を閲覧するためにはデコード処理が必要である
-			\item デコードされたAndroidManifest.xmlの入手方法は後述する
 		\end{itemize}
 	\item classes.dex
 		\begin{itemize}
-			\item Androidアプリケーションのソースファイルを変換してAndroidで実行できるようにしまとめたファイルである
+			\item Androidアプリケーションのソースファイルを変換してAndroidで実行可能なようにまとめたファイルである
+			　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%実行できるように　or 　実行可能なようにどっちらの方が正しいのでしょうか
 			\item 1つのdexファイルに含められるメソッドの数は65,536が上限であり、それ以上の数のメソッドが1つのAndroidアプリケーションに含まれる場合は、classes2.dex、classes3.dex…と複数ファイルに分割される
 		\end{itemize}
 \end{itemize}
@@ -72,7 +72,7 @@ Android Developers とは、Androidアプリケーション開発者向けのAnd
 
 %%%%%%%%%%%%%%%%%%%smaliファイル%%%%%%%%%%%%%%%%%%%%
 \subsection{smaliファイル}
-smaliとは、AndroidのDalvik仮想マシンで使用される開発者ファイルである。
+smaliファイルとは、AndroidのDalvik仮想マシンで使用される開発者ファイルである。
 通常、Androidアプリケーションに含まれている実行可能ファイルである。
 DEX(Dalvik Executable)（Dalvik実行可能）ファイル（.apkファイル）を逆コンパイルすることによって作成される。
 smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、Baksmali\cite{Baksmali}を用いる方法がある。

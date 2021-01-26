@@ -24,7 +24,7 @@
 
 
 \title{\vspace{-3cm}
-{\large 卒業研究中間発表概要}\\
+{\large 卒業論文要旨}\\
 {\bf
 %======== 卒業研究タイトル（ここから） ======
 Androidアプリケーションにおけるサードパーティー製APIでの暗号技術利用傾向の調査
@@ -46,15 +46,16 @@ Androidアプリケーションにおけるサードパーティー製APIでの�
 %======= ここから本文 ========
 開発者向けユーザブルセキュリティ、ユーザブルプライバシーの研究分野においてソフトウェア開発者の暗号技術の利用に関する研究が活発になっている。それらの研究により、暗号技術の利用が適切にされておらず脆弱性が存在するソフトウェアが多数あることが判明している。
 
-他の研究ではSSL/TLSやDES、AESなど特定の暗号技術に限った調査だけであり、暗号技術全般の網羅的な調査が行われていない。これに対し、河合による先行研究\cite{Kawai}では、Javaで開発されたAndroidアプリケーションを調査対象とし、Androidアプリケーションの暗号技術利用に関する現状を明らかにするために暗号で用いられるメソッド名や特徴のある用語によるフィルタリングアルゴリズムが指定可能な代表的箇所の抽出やAPI の利用傾向分析をしていた。
-しかし、河合の研究ではAndroidの開発者向け公式WebサイトであるAndroid Developers\cite{Android_Developers}のAPIリファレンスに記載されている公式APIのみの調査しか行われていない。その他のAPIとしては、企業が提供しているものや、開発者が提供しているものがあるサードパーティー製API、API開発者が既存のAPIを利用せずに独自に実装したAPIや、先述2つに含まれないものを独自実装等のAPIが存在する。
+これまでの研究は、SSL/TLSやDES、AESなど特定の暗号技術に限った調査だけであり、暗号技術全般の網羅的な調査が行われていない。これに対し、河合による先行研究\cite{Kawai}では、Javaで開発されたAndroidアプリケーションを調査対象とし、Androidアプリケーションの暗号技術利用に関する現状を明らかにするために暗号で用いられるメソッド名や特徴のある用語によるフィルタリングアルゴリズムが指定可能な代表的箇所の抽出やAPI の利用傾向分析をしていた。
+しかし、河合の研究ではAndroidの開発者向け公式WebサイトであるAndroid Developers\cite{Android_Developers}のAPIリファレンスに記載されている公式APIのみの調査しか行われていない。その他のAPIとしては、企業が提供しているものや、開発者が提供しているものがあるサードパーティー製API、API開発者が既存のAPIを利用せずに独自に実装したAPIや、先述2つに含まれない独自実装等のAPIが存在する。
 
-そこで、より網羅的な調査のために他のライブラリやAPKのデータ規模を拡大し調査の幅を広げていく。
+%そこで、より網羅的な調査のために他のライブラリやAPKのデータ規模を拡大し調査の幅を広げていく。
 
 独自実装等のAPIはドキュメントが公開されている可能性が低いためAPIのリスト化が困難である。これは、RSAやECC、Cryptoといった暗号、セキュリティに関するキーワードをAPIのリストの代わりとし検索する必要があるためAPKの網羅的調査を行う上で困難である。比較して、サードパーティー製APIではドキュメントが公開されているものもあるのでリスト化の困難性が少ない。そこで、本研究では特にサードパーティー製APIを分析対象とする。
 
-サードパーティ製APIの例としては、Google社のTink\cite{Tink}やFacebook社のConceal\cite{Conceal}、Twitter社のGeduldig\cite{Geduldig}がある。この中でもTink は、Android OS を提供している Google 社によるサードパーティ製 API であるため、Android
-アプリケーション開発者にも利用されている可能性は高いと考えられるので本研究の調査対象とする。
+サードパーティ製APIの例としては、Google社のTink\cite{Tink}やFacebook社のConceal\cite{Conceal}
+がある。この中でもTink は、Android OS を提供している Google 社によるサードパーティ製 API であるため、Android
+アプリケーション開発者にも利用されている可能性は高いと考えられる。本研究ではTinkを調査対象とした。
 
 Tinkは現在、AEAD(関連データを備えた認証付き暗号)、MAC(メッセージ認証コード)、
 PublicKeySignとPublicKeyVerify(ディジタル署名)、HybridEncryptとHybridDecrypt(ハイブリッド暗号化)の
@@ -62,22 +63,17 @@ PublicKeySignとPublicKeyVerify(ディジタル署名)、HybridEncryptとHybridD
 また、Tinkはドキュメントが公開されている。
 このドキュメントの全クラスのページから705個のMethod部分のリスト化を行った。
 
-APKにおいて利用されるAPIのマッチング調査の対象として、AndroZoo\cite{AndroZoo}のデータセットより411,486個のAPKから展開に成功した401,971個のsmaliファイルを使用する。
+APKにおいて利用されるAPIのマッチング調査の対象として、AndroZoo\cite{AndroZoo}のデータセットより取得した316,277個のAPKを展開したsmaliファイルを使用する。
 
 調査の結果、Tinkを利用しているのはパッケージ名が''mobi.zapzap''のAPKだけであった。このAPKでは、AndroidKeysetManagerクラスとそのメソッドが使用されている。
-このアプリケーション名は、''ZapZap - Mobile Wallet''\cite{ZapZap}であり日本ではサービスしていないAndroid版モバイルアプリケーションである。使用されているAPIの分析から設定値を保存するSharedPreferencesへのアクセスにTink上のAndroidKeysetManagerクラスとそのメソッドを使用しているので、
-暗号技術そのものとしてTinkは使用されていないと考えられる。以上より、Tinkはあまり使用されていないことがわかった。
+このアプリケーション名は、''ZapZap - Mobile Wallet''\cite{ZapZap}であり日本ではサービスしていないAndroid版モバイルアプリケーションである。
+使用されているAPIの分析から設定値を保存するSharedPreferencesへのアクセスにTink上のAndroidKeysetManagerクラスとそのメソッドを使用しているため、
+暗号技術そのものとしてTinkは使用されていないと考えられる。
 
-理由としては、Tink1.0.0のリリース開始が2017年9月と最近である点と、Androidでは公式APIの利用が中心的である点が考えられる。
+Tink利用がAndroid公式APIよりも大幅に少ない理由として、Tink1.0.0のリリース開始が2017年9月と最近である点と、Androidでは公式APIの利用が中心的である点が考えられる。
 
-今後は、より詳しいAPIでの暗号技術利用傾向を知るためにサードパーティ製APIや、独自実装等のAPIに調査の幅を広げる調査が必要であると考えられる。
+今後は、より詳しいAPIでの暗号技術利用傾向を知るために他のサードパーティ製APIや、独自実装等のAPIに調査の幅を広げる必要があると考えられる。
 
-
-\if0
-サードパーティ製のAPIの分析ではまずAPIのリスト化を行う必要があるが、サードパーティー製APIは公式APIとは違いドキュメントが作成されていないものがある。存在しない場合はサードパーティ製のAPI のソースコードを解析し、APIのドキュメントを作成してからAPIのリストの作成を行う。APKを取得し、APKからsmaliファイルを展開し、展開したsmaliファイルと調査対象のAPIのリストとのマッチングを行う。マッチング結果を各APKごとに利用したメソッドをCSV形式でファイルに記述し、現状どの程度暗号技術が利用されているのか、その時のアルゴリズムはどのようなものが多く利用されているのか探っていく。
-
-現在は、Android OSとAPKの関係性、JavaとAndroidアプリの関係性を理解し、 知識を付けるために河合の論文を読み、Javaの暗号APIとはどんなものか理解するためにAES暗号とRSA暗号を使い暗号化するプログラムを作成した。
-\fi
 %======= ここまで本文 ========
 
 
@@ -96,14 +92,11 @@ Tink, "Tink", https://github.com/google/tink, （参照 2021-01-25）
 \bibitem{Conceal} 
 Conceal, "Conceal", https://github.com/facebookarchive/conceal, （参照 2021-01-25）
 
-\bibitem{Geduldig} 
-Geduldig, "Geduldig", https://github.com/geduldig, （参照 2021-01-25）
-
 \bibitem{AndroZoo} 
 Université du Luxembourg, "AndroZoo",  https://androzoo.uni.lu/, （参照 2021-01-25）
 
 \bibitem{ZapZap} 
-ZapZap, "ZapZap ",https://www.zapzapwallet.com/,（参照 2021-01-25）
+ZapZap - Mobile Wallet, "ZapZap - Mobile Wallet",https://www.zapzapwallet.com/,（参照 2021-01-25）
 \end{thebibliography}
 
 \end{document}

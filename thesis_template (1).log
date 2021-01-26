@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  25 JAN 2021 20:22
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  26 JAN 2021 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -232,15 +232,14 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
  [5]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java
-[6]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
 .
- (c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
+(c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
-)
+ [6])
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.smal
 i
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
@@ -252,10 +251,36 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 13.
 ) [7]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.s
-h) [8] [9]) (./inputTexFile/section3.tex [10]) (./inputTexFile/section4.tex
-[11] [12] [13]) (./inputTexFile/section6.tex [14]) (./inputTexFile/section7.tex
-[15]) (./inputTexFile/section8.tex [16]) (./inputTexFile/bibliography.tex
-[17]
+h) [8] [9]) (./inputTexFile/section3.tex [10]
+Overfull \hbox (85.18396pt too wide) in paragraph at lines 10--35
+[]\JY1/mc/m/n/10 調査結果として 、 調査対象の \OT1/cmr/m/n/10 APK \JY1/mc/m/n/1
+0 群に最も利用された数が多か っ たメソ ッ ドは \OT1/cmr/m/n/10 an-droid.net.Uri
+.parse(java.lang.String)
+ []
+
+
+Overfull \hbox (19.07706pt too wide) in paragraph at lines 10--35
+\JY1/mc/m/n/10 関わるものであり、 調査対象の \OT1/cmr/m/n/10 APK \JY1/mc/m/n/10
+ 群のうち \OT1/cmr/m/n/10 61.73 \JY1/mc/m/n/10 ％の \OT1/cmr/m/n/10 APK \JY1/mc
+/m/n/10 が \OT1/cmr/m/n/10 an-droid.net.Uri.parse(java.lang.String)
+ []
+
+
+Overfull \hbox (172.16443pt too wide) in paragraph at lines 10--35
+\JY1/mc/m/n/10 て 、 \OT1/cmr/m/n/10 java.security.MessageDigest.digest() \JY1/
+mc/m/n/10 の \OT1/cmr/m/n/10 43,418 \JY1/mc/m/n/10 個が最も利用されており、 次
+に \OT1/cmr/m/n/10 java.security.MessageDigest.getInstance(java.lang.String)
+ []
+
+
+Overfull \hbox (46.16216pt too wide) in paragraph at lines 10--35
+\JY1/mc/m/n/10 を利用していることがわかる 。 また 、 \OT1/cmr/m/n/10 javax.cryp
+to.spec.SecretKeySpec.SecretKeySpec(byte[],java.lang.String)
+ []
+
+) (./inputTexFile/section4.tex [11] [12] [13]) (./inputTexFile/section6.tex
+[14]) (./inputTexFile/section7.tex [15]) (./inputTexFile/section8.tex [16])
+(./inputTexFile/bibliography.tex [17]
 Overfull \hbox (10.8343pt too wide) in paragraph at lines 11--12
 []\OT1/cmr/m/n/10 Android De-vel-op-ers, "An-droid De-vel-op-ers", https://deve
 loper.android.com/index.html?hl=ja,
@@ -287,10 +312,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2804 strings out of 481118
  39498 string characters out of 5920166
- 348233 words of memory out of 5000000
+ 347233 words of memory out of 5000000
  18839 multiletter control sequences out of 15000+600000
  542232 words of font info for 63 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 33i,9n,36p,373b,1736s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,9n,36p,373b,1746s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "thesis_template (1).dvi" (19 pages, 59244 bytes).
+Output written on "thesis_template (1).dvi" (19 pages, 61356 bytes).
