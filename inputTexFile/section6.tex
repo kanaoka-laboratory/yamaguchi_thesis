@@ -1,7 +1,7 @@
 \newpage
 \section{調査結果と考察}
 
-APIリストとsmaliファイルで利用されるメソッドのマッチング結果を表\ref{tb:graph}に示す。\\
+APIリストとsmaliファイルで利用されるメソッドのマッチング結果を下記に示す。\\
 調査の結果、Tinkを利用しているのはパッケージ名が”mobi.zapzap”のAPK1つだけであった。
 \\このAPKでは、AndroidKeysetManagerクラスとそのメソッドが使用されている。
 このアプリケーション名は、”ZapZap - Mobile Wallet”\cite{ZapZap}であり日本では
@@ -11,6 +11,11 @@ APIリストとsmaliファイルで利用されるメソッドのマッチング
 \\Tink利用がAndroid公式 API よりも大幅に少ない理由として、Tink1.0.0のリリース開始が2017年9月と最近である点と、
 Androidでは公式APIの利用が中心的である点が考えられる。
 
+\lstinputlisting[caption=APIリストとsmaliファイルで利用されるメソッドのマッチング結果,label=tink-result.txt]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/tink-result.txt}
+
+
+
+\if0
 \begin{landscape}
 \begin{table}[t]
 \begin{center}
@@ -31,3 +36,4 @@ smaliファイル名 & メソッド \\ \hline
 \end{landscape}
 % \textgreater が >
 % \textless が <
+\fi

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  27 JAN 2021 18:56
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  27 JAN 2021 21:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -229,77 +229,10 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 131.
 
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/grepbase.sh))
-(./inputTexFile/section6.tex [16] [17]
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <1.00006> not available
-(Font)              size <5> substituted on input line 18.
-
-LaTeX Font Info:    Calculating math sizes for size <1.00006> on input line 19.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.70003> not available
-(Font)              size <5> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.50003> not available
-(Font)              size <5> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <1.00006> not available
-(Font)              size <5> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.70003> not available
-(Font)              size <5> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.50003> not available
-(Font)              size <5> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <1.00006> not available
-(Font)              size <5> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.70003> not available
-(Font)              size <5> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.50003> not available
-(Font)              size <5> substituted on input line 19.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <1.00006> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <0.70003> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <0.50003> on input line 19.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <1.00006> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <1.00006> not available
-(Font)              size <5> substituted on input line 21.
-
-
-LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <1.00006> not available
-(Font)              size <5> substituted on input line 21.
-
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <1.00006> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 21.
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <1.00006> not available
-(Font)              size <5> substituted on input line 21.
-
-
-Overfull \hbox (625.01321pt too wide) in paragraph at lines 19--29
- [][][] 
- []
-
-[18]) (./inputTexFile/section7.tex) (./inputTexFile/section8.tex [19
-
-
-])
-(./inputTexFile/bibliography.tex [20]
+(./inputTexFile/section6.tex [16]
+(c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/tink-result.txt))
+(./inputTexFile/section7.tex [17]) (./inputTexFile/section8.tex [18])
+(./inputTexFile/bibliography.tex [19]
 Overfull \hbox (10.8343pt too wide) in paragraph at lines 11--12
 []\OT1/cmr/m/n/10 Android De-vel-op-ers, "An-droid De-vel-op-ers", https://deve
 loper.android.com/index.html?hl=ja,
@@ -323,7 +256,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 5.0/,  \JY1/mc/m/n/10 （ 参照 \OT1/cmr/m/n/10 2021-01-
  []
 
-) (./inputTexFile/yamaguchi_set.tex [21]
+) (./inputTexFile/yamaguchi_set.tex [20]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 7--14
  [] [] 
  []
@@ -363,7 +296,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 88--108
  [] [] 
  []
 
-[22
+[21
 
 ]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 108--128
@@ -380,7 +313,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 148--168
  [] [] 
  []
 
-[23]
+[22]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 168--188
  [] [] 
  []
@@ -390,7 +323,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 188--208
  [] [] 
  []
 
-[24]
+[23]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 208--228
  [] [] 
  []
@@ -405,7 +338,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 248--268
  [] [] 
  []
 
-[25]
+[24]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 268--288
  [] [] 
  []
@@ -420,7 +353,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 308--328
  [] [] 
  []
 
-[26]
+[25]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 328--348
  [] [] 
  []
@@ -430,7 +363,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 348--368
  [] [] 
  []
 
-[27]
+[26]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 368--388
  [] [] 
  []
@@ -445,7 +378,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 408--428
  [] [] 
  []
 
-[28]
+[27]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 428--448
  [] [] 
  []
@@ -460,7 +393,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 468--488
  [] [] 
  []
 
-[29]
+[28]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 488--508
  [] [] 
  []
@@ -470,7 +403,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 508--528
  [] [] 
  []
 
-[30]
+[29]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 528--548
  [] [] 
  []
@@ -485,7 +418,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 568--588
  [] [] 
  []
 
-[31]
+[30]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 588--608
  [] [] 
  []
@@ -500,7 +433,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 628--648
  [] [] 
  []
 
-[32]
+[31]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 648--668
  [] [] 
  []
@@ -510,7 +443,7 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 668--688
  [] [] 
  []
 
-[33]
+[32]
 Overfull \hbox (82.28223pt too wide) in alignment at lines 688--708
  [] [] 
  []
@@ -525,19 +458,14 @@ Overfull \hbox (82.28223pt too wide) in alignment at lines 728--735
  [] [] 
  []
 
-[34] [35]) (./thesis_template (1).aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 4.49997pt have occurred.
-
- ) 
+[33] [34]) (./thesis_template (1).aux) ) 
 Here is how much of TeX's memory you used:
- 2847 strings out of 481118
- 40440 string characters out of 5920166
- 348320 words of memory out of 5000000
- 18875 multiletter control sequences out of 15000+600000
- 543582 words of font info for 68 fonts, out of 8000000 for 9000
+ 2830 strings out of 481118
+ 40291 string characters out of 5920166
+ 418324 words of memory out of 5000000
+ 18856 multiletter control sequences out of 15000+600000
+ 542232 words of font info for 63 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 32i,14n,36p,483b,1744s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,14n,36p,645b,1744s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "thesis_template (1).dvi" (35 pages, 143236 bytes).
+Output written on "thesis_template (1).dvi" (34 pages, 151648 bytes).
