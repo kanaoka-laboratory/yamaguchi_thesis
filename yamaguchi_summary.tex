@@ -47,6 +47,8 @@ Androidアプリケーションにおけるサードパーティー製APIでの�
 開発者向けユーザブルセキュリティ、ユーザブルプライバシーの研究分野においてソフトウェア開発者の暗号技術の利用に関する研究が活発になっている。それらの研究により、暗号技術の利用が適切にされておらず脆弱性が存在するソフトウェアが多数あることが判明している。
 
 これまでの研究は、SSL/TLSやDES、AESなど特定の暗号技術に限った調査だけであり、暗号技術全般の網羅的な調査が行われていない。これに対し、河合による先行研究\cite{Kawai}では、Javaで開発されたAndroidアプリケーションを調査対象とし、Androidアプリケーションの暗号技術利用に関する現状を明らかにするために暗号で用いられるメソッド名や特徴のある用語によるフィルタリングアルゴリズムが指定可能な代表的箇所の抽出やAPI の利用傾向分析をしていた。
+
+
 しかし、河合の研究ではAndroidの開発者向け公式WebサイトであるAndroid Developers\cite{Android_Developers}のAPIリファレンスに記載されている公式APIのみの調査しか行われていない。その他のAPIとしては、企業が提供しているものや、開発者が提供しているものがあるサードパーティー製API、API開発者が既存のAPIを利用せずに独自に実装したAPIや、先述2つに含まれない独自実装等のAPIが存在する。
 
 %そこで、より網羅的な調査のために他のライブラリやAPKのデータ規模を拡大し調査の幅を広げていく。
@@ -96,7 +98,9 @@ Conceal, "Conceal", https://github.com/facebookarchive/conceal, （参照 2021-0
 Université du Luxembourg, "AndroZoo",  https://androzoo.uni.lu/, （参照 2021-01-25）
 
 \bibitem{ZapZap} 
-ZapZap - Mobile Wallet, "ZapZap - Mobile Wallet",https://www.zapzapwallet.com/,（参照 2021-01-25）
+ZAPZAP TM, "ZapZap - Mobile Wallet",https://www.zapzapwallet.com/,（参照 2021-01-25）
+%著者、”タイトル”、出典、公開時期
+%みたいな感じで書かれるのが普通で、サイトさんかの場合は著者に当たる部分にそのサイトの運営組織、タイトルにはサイトの名前、出典にURLって入る
 \end{thebibliography}
 
 \end{document}

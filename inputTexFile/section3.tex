@@ -4,10 +4,9 @@
 \subsection{河合らの調査}
 河合による調査は、Androidアプリケーションを調査対象とし、Androidアプリケーションの暗号技術利用に関する現状を明らかにするために、
 401,971個のAPKより展開されたsmaliファイルと4,324個のAndroid DevelopersのAPIリファレンスに記載されているAPIより取得した暗号・セキュリティに関するクラスが持つメソッドのリストを使用し、
-暗号で用いられるメソッド名や特徴のある用語によるフィルタリングアルゴリズムが指定可能な代表的箇所の抽出やAPIの利用傾向分析の調査を行った。
+暗号で用いられるメソッド名や特徴のある用語によるフィルタリングアルゴリズムが指定可能な代表的箇所の抽出やAPIの利用傾向分析の調査が行われた。
 %メソッドリスト表いれるべき？？
-
-
+本研究と関連高い調査結果を抜粋し下記に示す。
 各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件を表\ref{tb:api}に示す。
 調査対象の APK群に最も利用された数が多かったメソッドは
 android.net.Uri.parse(java.lang.String) の248,145個
@@ -42,7 +41,7 @@ javax.crypto.spec.SecretKeySpecクラスは秘密鍵に関する機能を提供�
 
 \begin{table}[t]
 \begin{center}
-\caption{各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件}
+\caption{各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件(河合による調査結果)}
 \begin{tabular}{lrrr} \hline
 メソッド名 & APK数(個) & 
 \begin{tabular}{c}メソッド\\利用確率\\P(A)(％) \end{tabular} \\ \hline
@@ -63,7 +62,7 @@ javax.crypto.spec.SecretKeySpecクラスは秘密鍵に関する機能を提供�
 
 \begin{table}[t]
 \begin{center}
-\caption{暗号・セキュリティに関する各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件}
+\caption{暗号・セキュリティに関する各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件(河合による調査結果)}
 \begin{tabular}{lrrr} \hline
 メソッド名 & APK数(個) & 
 \begin{tabular}{c}メソッド\\利用確率\\P(A)(％) \end{tabular} \\ \hline
