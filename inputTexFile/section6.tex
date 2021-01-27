@@ -1,11 +1,33 @@
 \newpage
 \section{調査結果と考察}
-調査の結果、Tinkを利用しているのはパッケージ名が”mobi.zapzap”のAPKだけであった。
-このAPKでは、AndroidKeysetManagerクラスとそのメソッドが使用されている。
-このアプリケーション名は、”ZapZap - Mobile Wallet”\cite{}であり日本では
+
+APIリストとsmaliファイルで利用されるメソッドのマッチング結果を表\ref{tb:graph}に示す。\\
+調査の結果、Tinkを利用しているのはパッケージ名が”mobi.zapzap”のAPK1つだけであった。
+\\このAPKでは、AndroidKeysetManagerクラスとそのメソッドが使用されている。
+このアプリケーション名は、”ZapZap - Mobile Wallet”\cite{ZapZap}であり日本では
 サービスしていないAndroid版モバイルアプリケーションである。
-使用されているAPIの分析から設
-定値を保存するSharedPreferencesへのアクセスにTink上のAndroidKeysetManagerクラスとそのメソッドを使用しているため、
+\\使用されているAPIの分析から設定値を保存するSharedPreferencesへのアクセスにTink上のAndroidKeysetManagerクラスとそのメソッドを使用しているため、
 暗号技術そのものとしてTinkは使用されていないと考えられる。
-Tink利用がAndroid公式 API よりも大幅に少ない理由として、Tink1.0.0のリリース開始が2017年9月と最近である点と、
+\\Tink利用がAndroid公式 API よりも大幅に少ない理由として、Tink1.0.0のリリース開始が2017年9月と最近である点と、
 Androidでは公式APIの利用が中心的である点が考えられる。
+
+\begin{landscape}
+\begin{table}[t]
+\begin{center}
+\caption{ APIリストとsmaliファイルで利用されるメソッドのマッチング結果}
+\scalefont{0.1}
+\begin{tabular}{llrr}  \hline
+smaliファイル名 & メソッド \\ \hline
+172\_apks011\_smali/16CFF2C83B4B4550D446C4BD60890BA6C43B047FC2D9D81120EFFF05CE69884D/mobi/zapzap/utils/AppUtil.smali: & invoke-virtual \{p0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder;-\textgreater build()Lcom/google/crypto/tink/integration/android/AndroidKeysetManager; \\
+172\_apks011\_smali/16CFF2C83B4B4550D446C4BD60890BA6C43B047FC2D9D81120EFFF05CE69884D/mobi/zapzap/utils/AppUtil.smali: & invoke-virtual \{p0, v0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder;-\textgreater withKeyTemplate(Lcom/google/crypto/tink/proto/KeyTemplate;)Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder; \\
+172\_apks011\_smali/16CFF2C83B4B4550D446C4BD60890BA6C43B047FC2D9D81120EFFF05CE69884D/mobi/zapzap/utils/AppUtil.smali: & invoke-virtual \{p0, v0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder;-\textgreater withKeyTemplate(Lcom/google/crypto/tink/proto/KeyTemplate;)Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder; \\
+172\_apks011\_smali/16CFF2C83B4B4550D446C4BD60890BA6C43B047FC2D9D81120EFFF05CE69884D/mobi/zapzap/utils/AppUtil.smali: & invoke-virtual \{p0, v0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder;-\textgreater withMasterKeyUri(Ljava/lang/String;)Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder; \\
+172\_apks011\_smali/16CFF2C83B4B4550D446C4BD60890BA6C43B047FC2D9D81120EFFF05CE69884D/mobi/zapzap/utils/AppUtil.smali: & invoke-virtual \{v0, p0, v1, v2\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder;-\textgreater withSharedPref(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/google/crypto/tink/integration/android/AndroidKeysetManager\$Builder; \\ 
+172\_apks011\_smali/16CFF2C83B4B4550D446C4BD60890BA6C43B047FC2D9D81120EFFF05CE69884D/mobi/zapzap/utils/AppUtil.smali: & invoke-virtual \{p0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager;-\textgreater getKeysetHandle()Lcom/google/crypto/tink/KeysetHandle; \\ \hline
+\end{tabular}
+\label{tb:graph}
+\end{center}
+\end{table}
+\end{landscape}
+% \textgreater が >
+% \textless が <

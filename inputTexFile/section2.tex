@@ -89,9 +89,9 @@ smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、
 \subsubsection{Dalvikバイトコード}
 Dalvikバイトコードとは、Androidにおける中間言語である。Apktool等を用いてAPKより取得できるsmaliファイルは、Dalvikバイトコードで記述されている。以下に、ソースコード 1、ソースコード2にDalvikバイトコードの例と、対応するソースコードを示す。
 
-
-\lstinputlisting[caption=対応するソースコード,label=BytecodeSample.java]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java}
 \lstinputlisting[caption=Dalvikバイトコードの例,label=BytecodeSample.smali]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.smali}
+\lstinputlisting[caption=対応するソースコード,label=BytecodeSample.java]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java}
+
 
 %%%%%%%%%%%%%%%%%%%CUI%%%%%%%%%%%%%%%%%%%
 \subsection{CUI}
@@ -206,20 +206,16 @@ SHA-512/224とSHA-512/256についてもSHA-512で出力されたハッシュ値
 
 %%%%%%%%%%%%%%%%%%%API%%%%%%%%%%%%%%%%%%%
 \subsection{API}
-APIとは、Application Programming Interfaceの略であり、あるコンピュータプログラム（ソフトウェア）の機能や管理するデータなどを、外部の他のプログラムから呼び出して利用するための手順やデータ形式などを定めた規約である。
-APKに使われている暗号技術は大きく3種類に分けられる。
-詳細は、第4章で説明する。
-
-\if0　%%まとめてコメントアウト
-
+APIとは、Application Programming Interfaceの略であり、あるコンピュータプログラム（ソフトウェア）の機能や管理するデータなどを、外部の他のプログラムから呼び出して利用するための手順やデータ形式などを定めた規約である。\\APKに使用されているAPIは大きく分けて3種類存在する。詳細は\ref{sec:APIの分類}で説明する。
+\if0
 \subsubsection {公式API}
-公式APIとは、Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIである。
-
+Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIのことを本研究では公式APIと呼ぶこととする。
+Androidでは、ソフトウェア開発のために必要なプログラムやライブラリをGoogle社がAndroid SDKとして提供してる。SDKで提供されるライブラリはAndroid開発者向けサイトAndroid DevelopersにAPIリファレンスとして記載されてる。
 \subsubsection {サードパーティー製API}
+
 サードパーティー製APIとは、サードパーティが提供するAPIのことである。
 サードパーティとは、特定のハードウェア、OS、ソフトウェア、あるいはサービスなどを対象として、
 それに対応する製品を販売、提供している組織や企業のことを指す。
-サードパーティ製APIの例としては、Google社のtinkやFacebook社のConcealnがある。
 
 \subsubsection {独自実装等のAPI}
 API開発者が既存のAPIを利用せずに独自に実装したAPIや、先述2つに含まれないものを独自実装等のAPIと本論文では呼ぶこととする。

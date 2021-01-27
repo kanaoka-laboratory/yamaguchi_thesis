@@ -17,10 +17,10 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.8}smaliファイル}{6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.9}中間言語}{6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.9.1}Dalvikバイトコード}{6}\protected@file@percent }
-\newlabel{BytecodeSample.java}{{1}{7}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}対応するソースコード}{7}\protected@file@percent }
-\newlabel{BytecodeSample.smali}{{2}{7}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}Dalvikバイトコードの例}{7}\protected@file@percent }
+\newlabel{BytecodeSample.smali}{{1}{7}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}Dalvikバイトコードの例}{7}\protected@file@percent }
+\newlabel{BytecodeSample.java}{{2}{7}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}対応するソースコード}{7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.10}CUI}{7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.11}Linux}{7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.12}Linuxカーネル}{7}\protected@file@percent }
@@ -45,31 +45,40 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.20}APIドキュメント}{10}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3}関連研究}{11}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}河合らの調査}{11}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}河合らの調査結果}{11}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件(河合による調査結果)}}{12}\protected@file@percent }
 \newlabel{tb:api}{{3}{12}}
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces 暗号・セキュリティに関する各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件(河合による調査結果)}}{13}\protected@file@percent }
 \newlabel{tb:graph_cipher}{{4}{13}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}調査対象と手法}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}smaliファイル}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Android APIの分類}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}公式API}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}サードパーティー製API}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}独自実装等のAPI}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}APIの分析}{14}\protected@file@percent }
+\newlabel{sec:APIの分類}{{4}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Android APIの分類}{14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}公式API}{14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}サードパーティー製API}{14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}独自実装等のAPI}{14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}APIの分析}{14}\protected@file@percent }
+\newlabel{sec:APIの分析}{{4.2}{14}}
 \citation{Tink Cryptography}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Tinkのドキュメントページより取得した暗号・セキュリティに関するクラスが持つ705個のメソッドのリストの一部抜粋}}{15}\protected@file@percent }
-\newlabel{tb:APImethod}{{5}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}サードパーティ製APIの分析}{15}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}サードパーティ製APIの例}{15}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Tinkの分析}{15}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}APIの取得方法}{15}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}APIリストとsmaliファイルで利用されるメソッドのマッチング調査}{16}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}サードパーティ製APIの分析}{15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}サードパーティ製APIの例}{15}\protected@file@percent }
+\newlabel{sec:third_party}{{4.3.1}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Tinkの分析}{15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}APIの取得方法}{15}\protected@file@percent }
+\newlabel{sec:APIの取得方法}{{4.4}{15}}
+\citation{AndroZoo}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Tinkのドキュメントページより取得した暗号・セキュリティに関するクラスが持つメソッドのリストの一部抜粋}}{16}\protected@file@percent }
+\newlabel{tb:APImethod}{{5}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}APIリストとsmaliファイルで利用されるメソッドのマッチング調査}{16}\protected@file@percent }
+\newlabel{sec:調査}{{4.5}{16}}
 \newlabel{find_grepbase.sh}{{4}{16}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {4}APIリストとsmaliファイルで利用されるメソッドのマッチンPythonスクリプト}{16}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4}APIリストとsmaliファイルで利用されるメソッドのマッチングPythonスクリプト}{16}\protected@file@percent }
+\citation{ZapZap}
 \@writefile{toc}{\contentsline {section}{\numberline {5}調査結果と考察}{17}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}今後の課題}{18}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}まとめ}{19}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces  APIリストとsmaliファイルで利用されるメソッドのマッチング結果}}{18}\protected@file@percent }
+\newlabel{tb:graph}{{6}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}今後の課題}{19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}他のサードパーティ製APIの調査}{19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}独自実装等のAPIの調査}{19}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}まとめ}{20}\protected@file@percent }
 \bibcite{StatCounter Global Stats}{1}
 \bibcite{GooglePlay}{2}
 \bibcite{Android_Developers}{3}
@@ -78,23 +87,11 @@
 \bibcite{INTERNET Watch}{6}
 \bibcite{API_reference}{7}
 \bibcite{Tink Cryptography}{8}
-\bibcite{bib03}{9}
-\bibcite{bib04}{10}
-\bibcite{bib05}{11}
-\bibcite{bib06}{12}
-\bibcite{bib07}{13}
-\bibcite{bib08}{14}
-\bibcite{bib09}{15}
-\bibcite{bib010}{16}
-\bibcite{bib010}{17}
-\bibcite{bib010}{18}
-\bibcite{bib010}{19}
-\bibcite{bib010}{20}
-\bibcite{bib010}{21}
-\bibcite{bib010}{22}
-\bibcite{bib010}{23}
-\bibcite{bib010}{24}
-\bibcite{bib010}{25}
-\bibcite{bib010}{26}
-\bibcite{bib010}{27}
-\bibcite{bib010}{28}
+\bibcite{AndroZoo}{9}
+\bibcite{ZapZap}{10}
+\bibcite{bib03}{11}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Android DevelopersのAPIリファレンスに記載されているメソッドを抽出して作成したリスト}{21}\protected@file@percent }
+\newlabel{tab:HTMLList}{{A}{21}}
+\gdef \LT@i {\LT@entry 
+    {13}{256.03815pt}\LT@entry 
+    {1}{467.24408pt}}

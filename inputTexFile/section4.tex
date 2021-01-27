@@ -1,33 +1,31 @@
 \newpage
 \section{調査対象と手法}
-%%%%%%%%%%%%%%%%%%%%
-\subsection {smaliファイル}
-
-調査対象となるAPK群は、AndroZoo\cite{}のデータセットより411,486個のAPKから展開されたsmaliファイルを使用する。
-
+まず本研究でも調査対象であるAPIの分析から行う。
+\label{sec:APIの分類}
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Android APIの分類}
+
 APKに使われているAPIは大きく分けて3種類存在する。
 %%%%%%%%%%
-　\subsubsection {公式API}
-\if0
-・Androidでは、ソフトウェア開発のために必要なプログラムやライブラリをGoogle社がAndroid SDKとして提供してる
-・SDKで提供されるライブラリはAndroid開発者向けサイトAndroid DevelopersにAPIリファレンスとして記載されてる
-・この研究ではここに記載されてるAPIを「公式API」と呼ぶことにするよ
-\fi
+\subsubsection {公式API}
+
 Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIのことを本研究では公式APIと呼ぶこととする。
-%%%%%%%%%%
-　\subsubsection {サードパーティー製API}
+Androidでは、ソフトウェア開発のために必要なプログラムやライブラリをGoogle社がAndroid SDKとして提供してる。SDKで提供されるライブラリはAndroid開発者向けサイトAndroid DevelopersにAPIリファレンスとして記載されてる。
+\subsubsection {サードパーティー製API}
+
 サードパーティー製APIとは、サードパーティが提供するAPIのことである。
 サードパーティとは、特定のハードウェア、OS、ソフトウェア、あるいはサービスなどを対象として、
 それに対応する製品を販売、提供している組織や企業のことを指す。
-%%%%%%%%%%
-　\subsubsection {独自実装等のAPI}
+
+\subsubsection {独自実装等のAPI}
 API開発者が既存のAPIを利用せずに独自に実装したAPIや、先述2つに含まれないものを独自実装等のAPIと本論文では呼ぶこととする。
+
 
 %%%%%%%%%%%%%%%%%%%%
 \subsection{APIの分析}
-独自実装等のAPIはドキュメントが公開されている可能性
+河合による先行研究で公式APIが調査対象とされていたので、ここではサードパーティ製APIと独自実装等のAPIの分析を行う。
+\label{sec:APIの分析}
+\\独自実装等のAPIはドキュメントが公開されている可能性
 が低いためAPIのリスト化が困難である。これは、
 RSAやECC、Cryptoといった暗号、セキュリティ
 に関するキーワードをAPIのリストの代わりとし検
@@ -42,8 +40,7 @@ APIは公式APIとは違いドキュメントが作成され
 ていないものがある。存在しない場合はサードパー
 ティ製の APIのソースコードを解析し、APIのド
 キュメントを作成してからAPIのリストの作成を行う。
-
-独自実装等のAPIは今後の課題とする。
+\\そこで、本研究では特にサードパーティ製APIを分析対象とし、独自実装等のAPIは今後の課題とする。
 
 %%%%%%%%%%%%%%%%%%%%
 \subsection{サードパーティ製APIの分析}
@@ -51,6 +48,7 @@ APIは公式APIとは違いドキュメントが作成され
 %%%%%%%%%%
 \subsubsection{サードパーティ製APIの例}
 どんなサードパーティ製APIが存在するのか紹介する。
+\label{sec:third_party}
 \begin{itemize}
 \item Tink　
 
@@ -75,7 +73,7 @@ Tinkは現在、それぞれのプリミティブを使って実装された、4
 \item ハイブリッド暗号化(プリミティブ: HybridEncryptとHybridDecrypt)
 \end{itemize}
 プリミティブとは、単純あるいは基本的な構造や要素のことを言う。
-Tinkには、ドキュメントが存在するので、ドキュメントが存在しない
+\\Tinkには、ドキュメントが存在するので、ドキュメントが存在しない
 サードパーティ製APIよりリスト化の困難性が少ない。
 
 \if0
@@ -98,12 +96,13 @@ AEADは、次の 3 つのアルゴリズムの組 AE = (AE-K, AE-E, AE-D) で定
 \fi
 %%%%%%%%%%%%%%%%%%%%
 \subsection{APIの取得方法}
+\label{sec:APIの取得方法}
 Tinkのドキュメント\cite{Tink Cryptography}からAPIを抽出する。その167個のクラスが持つメソッド705個のリスト化を行った。このリストは、2020年12月のものである。
 リストの1部を抜粋し、表\ref{tb:APImethod}に示す。リスト全体は付録\ref{tab:HTMLList}に示す。
 
 \begin{table}[t]
 \begin{center}
-\caption{Tinkのドキュメントページより取得した暗号・セキュリティに関するクラスが持つ705個のメソッドのリストの一部抜粋}
+\caption{Tinkのドキュメントページより取得した暗号・セキュリティに関するクラスが持つメソッドのリストの一部抜粋}
 \begin{tabular}{ll} \hline
 クラス名 & メソッド名(引数) \\ \hline
 AesEaxKeyManager & validateKey() \\
@@ -114,9 +113,13 @@ AndroidKeystoreAesGcm &  encrypt\\ \hline
 \end{center}
 \end{table}
 
+\newpage
 
-
+%%%%%%%%%%%%%%%%%%%%
 \subsection{APIリストとsmaliファイルで利用されるメソッドのマッチング調査}
+\label{sec:調査}
+調査対象となるAPK群は、AndroZoo\cite{AndroZoo}のデータセットより307,587個のAPKから展開されたsmaliファイルを使用する。
+
 APIリストとsmaliファイルで利用されるメソッドのマッチングは、
 まずsmaliファイルに記述された情報から”invoke”が記述された行を以下の正規表現にて抽出する。
 
@@ -125,16 +128,17 @@ APIリストとsmaliファイルで利用されるメソッドのマッチング
 
 抽出された行の例を以下に示す。
 
-\begin{center} invoke-virtual \{p0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager;->getKeysetHandle()Lcom/google/crypto/tink/KeysetHandle;\end{center}
+\begin{center} invoke-virtual \{p0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager;-\textgreater getKeysetHandle()Lcom/google/crypto/tink/KeysetHandle;\end{center}　
 
+\if0
 抽出された行はsmaliファイルの形式で記述されているため、マッチングの際に不必要な情報や
-マッチングに適さない形となっている。上記の抽出された行のをJavaの形式で表現すると以下になる。
+マッチングに適さない形となっている。上記の抽出された行をJavaの形式で表現すると以下になる。
 
-\begin{center}　じゃばああああああああああああああああ\end{center}
-
-\lstinputlisting[caption=APIリストとsmaliファイルで利用されるメソッドのマッチンPythonスクリプト,label=find_grepbase.sh]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/grepbase.sh}
-
-
+\begin{center}じゃばああああああああああああああああ\end{center}
+\fi
+抽出された行とAPIリストのマッチングはクラス名、メソッド名で行う。
+ソースコード4にTinkを利用しているAPKを数えるPython関数を示す。%引数1個目に、smaliファイルが入ったアプリごとに入っているフォルダを、引数2個目に調べたいAPIのリストを指定する。
+\lstinputlisting[caption=APIリストとsmaliファイルで利用されるメソッドのマッチングPythonスクリプト,label=find_grepbase.sh]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/grepbase.sh}
 
 
 
