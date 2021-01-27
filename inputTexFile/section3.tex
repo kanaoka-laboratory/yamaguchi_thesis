@@ -1,42 +1,30 @@
 \newpage
 \section{関連研究} %先に書く
 本研究における関連研究を紹介する。
+
 \subsection{河合らの調査}
-河合による調査は、Androidアプリケーションを調査対象とし、Androidアプリケーションの暗号技術利用に関する現状を明らかにするために、
-401,971個のAPKより展開されたsmaliファイルと4,324個のAndroid DevelopersのAPIリファレンスに記載されているAPIより取得した暗号・セキュリティに関するクラスが持つメソッドのリストを使用し、
+河合は、Androidアプリケーションを調査対象とし、Androidアプリケーションの暗号技術利用に関する現状を明らかにするために、
+401,971個のAPKを展開し、得られたsmaliファイルと、4,324個のAndroid DevelopersのAPIリファレンスに記載されているAPIより取得した暗号・セキュリティに関するクラスが持つメソッドのリストを使用し、
 暗号で用いられるメソッド名や特徴のある用語によるフィルタリングアルゴリズムが指定可能な代表的箇所の抽出やAPIの利用傾向分析の調査が行われた。
 %メソッドリスト表いれるべき？？
 本研究と関連高い調査結果を抜粋し下記に示す。
-各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件を表\ref{tb:api}に示す。
+
+
+\subsubsection{河合らの調査結果}
+\begin{itemize}
+\item アルゴリズムが指定可能であるメソッドにおける、指定されたアルゴリズムの分析
+
+
 調査対象の APK群に最も利用された数が多かったメソッドは
 android.net.Uri.parse(java.lang.String) の248,145個
 であり、次がjava.net.URL.URL(java.lang.String)の120,601個であった。
 
-
 調査対象のAPK群に利用された数が多かったメソッドの上位はjava.netやandroid.netといったネットワークに関わるもの
 であり、調査対象のAPK群のうち61.73\%のAPKがandroid.net.Uri.parse(java.lang.String)を使用しており、
-何かしらの通信を行っていると考えられる。
+何かしらの通信を行っていると河合は推測した。
 
-android.net.Uri.parse(java.lang.String)を暗号・セキュリティに関する各APIにおける
-調査対象のAPK群の中で
-そのAPIを少なくとも1回は利用した回数と
-そのAPIが少なくとも1回は利用されている確率の
-上位10件を表\ref{tb:graph_cipher}
-に示す。
-
-暗号・セキュリティに関するメソッドとして、
-java.security.MessageDigest.digest()の43,418個が最も利用されており、
-次にjava.security.MessageDigest.getInstance(java.lang.String)の37,405個であった。
-
-
-java.security.MessageDigestクラスは主にSHA-1やSHA-256といったアルゴリズムを使用したハッシュ値を提供するものである。
-調査対象のAPK群のうち10.80\%がハッシュ値を利用していることがわかった。
-また、
-javax.crypto.spec.SecretKeySpec.SecretKeySpec(byte[],java.lang.String)表\ref{tb:graph_cipher}
-でメッセージダイジェストに関するクラスの次に利用数が多い。
-javax.crypto.spec.SecretKeySpecクラスは秘密鍵に関する機能を提供するクラスである。
-調査対象のAPK群において最も利用されている暗号化方式は公開鍵暗号であることが考えられる使用しており、
-何かしらの通信を行っていると考えられる。
+各APIにおける調査対象のAPK群の中でそのAPIを少なくとも1回は利用した回数とそのAPIが少なくとも1回は利用されている確率の上位10件を表\ref{tb:api}に示す。
+\end{itemize}
 
 
 \begin{table}[t]
@@ -59,6 +47,36 @@ javax.crypto.spec.SecretKeySpecクラスは秘密鍵に関する機能を提供�
 \label{tb:api}
 \end{center}
 \end{table}
+\newpage
+
+\begin{itemize}
+\item 利用されるAPIの傾向の分析
+
+
+暗号・セキュリティに関するメソッドとして、
+java.security.MessageDigest.digest()の43,418個が最も利用されており、
+次にjava.security.MessageDigest.getInstance(java.lang.String)の37,405個であった。
+
+java.security.MessageDigestクラスは主にSHA-1やSHA-256といったアルゴリズムを使用したハッシュ値を提供するものである。
+河合の調査結果より、調査対象のAPK群のうち10.80\%がハッシュ値を利用していることが河合により判明した。
+
+
+また、javax.crypto.spec.SecretKeySpec.SecretKeySpec(byte[],java.lang.String)表\ref{tb:graph_cipher}
+でメッセージダイジェストに関するクラスの次に利用数が多い。
+javax.crypto.spec.SecretKeySpecクラスは秘密鍵に関する機能を提供するクラスである。
+調査対象のAPK群において最も利用されている暗号化方式は公開鍵暗号であることが考えられる使用しており、
+何かしらの通信を行っていると河合は推測した。
+
+android.net.Uri.parse(java.lang.String)を暗号・セキュリティに関する各APIにおける
+調査対象のAPK群の中で
+そのAPIを少なくとも1回は利用した回数と
+そのAPIが少なくとも1回は利用されている確率の
+上位10件を表\ref{tb:graph_cipher}
+に示す。
+
+
+\end{itemize}
+
 
 \begin{table}[t]
 \begin{center}
@@ -80,12 +98,12 @@ javax.crypto.spec.SecretKeySpecクラスは秘密鍵に関する機能を提供�
 \label{tb:graph_cipher}
 \end{center}
 \end{table}
+\newpage
 
 
-
-
-河合による先行研究ではこの上記のような結果が得られたが、 この研究ではAndroid Developersに記載されている公式のAPIについての調査以外は
-行われていないので、暗号利用動向の網羅的調査のために今後これらの更なる調査、分析が必要である。
+河合による先行研究ではこの上記のような結果が得られたが、 
+河合は暗号利用動向の網羅的調査のために今後これらの更なる調査、分析のために
+APIリファレンスに記載されているAPI以外のAPIの調査も必要であると考察した。
 
 
 

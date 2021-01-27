@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  27 JAN 2021 10:08
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.4.15)  27 JAN 2021 12:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,24 +252,23 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
 ) [7]
 (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.s
 h) [8] [9]) (./inputTexFile/section3.tex [10]
-Overfull \hbox (69.96786pt too wide) in paragraph at lines 16--19
-\JY1/mc/m/n/10 ッ トワ ークに関わるものであり、 調査対象の \OT1/cmr/m/n/10 APK 
-\JY1/mc/m/n/10 群のうち \OT1/cmr/m/n/10 61.73%\JY1/mc/m/n/10 の \OT1/cmr/m/n/10
- APK \JY1/mc/m/n/10 が \OT1/cmr/m/n/10 an-droid.net.Uri.parse(java.lang.String)
-
+Overfull \hbox (29.37553pt too wide) in paragraph at lines 18--21
+[]\JY1/mc/m/n/10 調査対象の \OT1/cmr/m/n/10 APK \JY1/mc/m/n/10 群に最も利用され
+た数が多か っ たメソ ッ ドは \OT1/cmr/m/n/10 an-droid.net.Uri.parse(java.lang.S
+tring)
  []
 
-) (./inputTexFile/section4.tex [11] [12] [13]
+[11] [12]) (./inputTexFile/section4.tex [13] [14]
 
-LaTeX Warning: Reference `tab:HTMLList' on page 14 undefined on input line 106.
+LaTeX Warning: Reference `tab:HTMLList' on page 15 undefined on input line 102.
 
 
-[14]
+[15]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
  (c:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/grepbase.sh))
-(./inputTexFile/section6.tex [15]) (./inputTexFile/section7.tex [16])
-(./inputTexFile/section8.tex [17]) (./inputTexFile/bibliography.tex [18]
+(./inputTexFile/section6.tex [16]) (./inputTexFile/section7.tex [17])
+(./inputTexFile/section8.tex [18]) (./inputTexFile/bibliography.tex [19]
 Overfull \hbox (10.8343pt too wide) in paragraph at lines 11--12
 []\OT1/cmr/m/n/10 Android De-vel-op-ers, "An-droid De-vel-op-ers", https://deve
 loper.android.com/index.html?hl=ja,
@@ -293,7 +292,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 5.0/,  \JY1/mc/m/n/10 （ 参照 \OT1/cmr/m/n/10 2021-01-
  []
 
-[19]) [20] (./thesis_template (1).aux)
+[20]) [21] (./thesis_template (1).aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -310,4 +309,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  33i,14n,36p,374b,1746s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "thesis_template (1).dvi" (20 pages, 68360 bytes).
+Output written on "thesis_template (1).dvi" (21 pages, 69036 bytes).
