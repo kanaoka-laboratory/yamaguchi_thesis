@@ -7,92 +7,62 @@
 APKに使われているAPIは大きく分けて3種類存在する。
 %%%%%%%%%%
 \subsubsection {公式API}
-
 Androidの開発者向け公式WebサイトであるAndroid DevelopersのAPIリファレンスに記載されているAPIのことを本研究では公式APIと呼ぶこととする。
-Androidでは、ソフトウェア開発のために必要なプログラムやライブラリをGoogle社がAndroid SDKとして提供してる。SDKで提供されるライブラリはAndroid開発者向けサイトAndroid DevelopersにAPIリファレンスとして記載されてる。
-\subsubsection {サードパーティー製API}
+Androidでは、ソフトウェア開発のために必要なプログラムやライブラリをGoogle社がAndroid SDKとして提供している。SDKで提供されるライブラリはAndroid開発者向けサイトAndroid DevelopersにAPIリファレンスとして提供している。
 
+\subsubsection {サードパーティー製API}
 サードパーティー製APIとは、サードパーティが提供するAPIのことである。
 サードパーティとは、特定のハードウェア、OS、ソフトウェア、あるいはサービスなどを対象として、
 それに対応する製品を販売、提供している組織や企業のことを指す。
 
 \subsubsection {独自実装等のAPI}
 API開発者が既存のAPIを利用せずに独自に実装したAPIや、先述2つに含まれないものを独自実装等のAPIと本論文では呼ぶこととする。
-
-
 %%%%%%%%%%%%%%%%%%%%
 \subsection{APIの分析}
 河合による先行研究で公式APIが調査対象とされていたので、ここではサードパーティ製APIと独自実装等のAPIの分析を行う。
 \label{sec:APIの分析}
-\\独自実装等のAPIはドキュメントが公開されている可能性
-が低いためAPIのリスト化が困難である。これは、
-RSAやECC、Cryptoといった暗号、セキュリティ
-に関するキーワードをAPIのリストの代わりとし検
-索する必要があるためAPKの網羅的調査を行う上
-で困難である。
 
-比較して、サードパーティー製API
-ではドキュメントが公開されているものもあるので
-リスト化の困難性が少ない。
-サードパーティ製のAPIの分析ではまずAPIのリスト化を行う必要があるが、サードパーティー製
-APIは公式APIとは違いドキュメントが作成され
-ていないものがある。存在しない場合はサードパー
-ティ製の APIのソースコードを解析し、APIのド
-キュメントを作成してからAPIのリストの作成を行う。
-\\そこで、本研究では特にサードパーティ製APIを分析対象とし、独自実装等のAPIは今後の課題とする。
+独自実装等のAPIはドキュメントが公開されている可能性が低いためAPIのリスト化が困難である。
+これは、RSAやECC、Cryptoといった暗号、セキュリティ
+に関するキーワードをAPIのリストの代わりとし検索する必要があるためAPKの網羅的調査を行う必要があるためである。
+
+比較して、サードパーティー製APIではドキュメントが公開されているものもあるのでリスト化の困難性が少ない。
+サードパーティ製のAPIの分析ではまずAPIのリスト化を行う必要があるが、サードパーティー製APIは公式APIとは違いドキュメントが作成されていないものがある。
+存在しない場合はサードパーティ製のAPIのソースコードを解析し、APIのドキュメントを作成してからAPIのリストの作成を行うアプローチが考えられる。
+
+そこで、本研究では特にサードパーティ製APIを分析対象とし、独自実装等のAPIは今後の課題とする。
 
 %%%%%%%%%%%%%%%%%%%%
 \subsection{サードパーティ製APIの分析}
 
-%%%%%%%%%%
-\subsubsection{サードパーティ製APIの例}
-
 \label{sec:third_party}
-\begin{itemize}
-\item Tink\cite{tink}
+サードパーティ製APIの例としては、Tink\cite{tink}とConceal\cite{conceal}が挙げられる。
 
 Tinkは、Googleの暗号技術者とセキュリティエンジニアのグループが開発した、
 多言語でクロスプラットフォームな暗号ライブラリである。
-
-\item Conceal\cite{conceal}
-
 Concealは、Facebookが開発したライブラリである。共通鍵暗号アルゴリズム AES(256bit)と暗号利用モードGCMを用いた暗号化処理を代行している。
  
-\end{itemize}
-この中でもTinkは、Android OSを提供しているGoogle社によるサードパーティ製APIであるため、Androidアプリケーション開発者にも利用されている可能性は高いと考えられる。本研究ではTinkを調査対象とする。
+この中でもTinkは、Android OSを提供しているGoogle社によるサードパーティ製APIであるため、Androidアプリケーション開発者にも利用されている可能性は高いと考えられる。
+
+本研究ではTinkを調査対象とする。
 
 %%%%%%%%%%
-\subsubsection{Tinkの分析}
+\subsection{Tinkの分析}
 
-Tinkは現在、それぞれのプリミティブを使って実装された、4つの暗号化操作を提供している。
+Tinkは現在、それぞれのプリミティブを使って実装された4つの暗号化操作を提供している。
 \begin{itemize}
 \item 関連データを備えた認証付き暗号(プリミティブ: AEAD)
 \item メッセージ認証コード (プリミティブ: MAC)
 \item ディジタル署名(プリミティブ: PublicKeySignとPublicKeyVerify)
 \item ハイブリッド暗号化(プリミティブ: HybridEncryptとHybridDecrypt)
 \end{itemize}
+
 プリミティブとは、単純あるいは基本的な構造や要素のことを言う。
-\\Tinkには、ドキュメントが存在するので、ドキュメントが存在しない
+
+Tinkには、ドキュメントが存在するので、ドキュメントが存在しない
 サードパーティ製APIよりリスト化の困難性が少ない。
 
-\if0
-\subsubsection{それぞれのプリミティブの詳しい説明いれるか迷っている}
-暗号の説明をしていく。
-\begin{itemize}
-\item AEAD
 
-AEADは、次の 3 つのアルゴリズムの組 AE = (AE-K, AE-E, AE-D) で定義される。
-
-\item MAC
-
-メッセージ認証コードMACは、Message Authentication Codeの略であり、ネットワークを通じて伝送されたメッセージが途中で改竄されていないかを確認することである。
-
-\item PublicKeySignとPublicKeyVerify
-
-\item HybridEncryptとHybridDecrypt
-
-\end{itemize}
-\fi
 %%%%%%%%%%%%%%%%%%%%
 \subsection{APIの取得方法}
 \label{sec:APIの取得方法}
@@ -101,7 +71,7 @@ Tinkのドキュメント\cite{Tink Cryptography}からAPIを抽出する。そ�
 
 \begin{table}[t]
 \begin{center}
-\caption{Tinkのドキュメントページより取得した暗号・セキュリティに関するクラスが持つメソッドのリストの一部抜粋}
+\caption{Tinkのドキュメントページより取得した暗号・セキュリティに関するクラスが持つメソッドのリストの1部抜粋}
 \begin{tabular}{ll} \hline
 クラス名 & メソッド名(引数) \\ \hline
 AesEaxKeyManager & validateKey() \\
@@ -123,20 +93,14 @@ APIリストとsmaliファイルで利用されるメソッドのマッチング
 まずsmaliファイルに記述された情報から”invoke”が記述された行を以下の正規表現にて抽出する。
 
 \begin{center} .* invoke-.*, L \end{center}
-(任意の文字列と''invoke-''と''L'')
 
+この正規表現は、任意の文字列と任意の文字列と”invoke-”と任意の文字列と任意の文字列とカンマ(,)と”L”のパターンが0個以上の部分が抽出されることを示している。
 抽出された行の例を以下に示す。
 
 \begin{center} invoke-virtual \{p0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager;-\textgreater getKeysetHandle()Lcom/google/crypto/tink/KeysetHandle;\end{center}　
 
-\if0
-抽出された行はsmaliファイルの形式で記述されているため、マッチングの際に不必要な情報や
-マッチングに適さない形となっている。上記の抽出された行をJavaの形式で表現すると以下になる。
-
-\begin{center}じゃばああああああああああああああああ\end{center}
-\fi
 抽出された行とAPIリストのマッチングはクラス名、メソッド名で行う。
-ソースコード4にTinkを利用しているAPKを数えるPython関数を示す。%引数1個目に、smaliファイルが入ったアプリごとに入っているフォルダを、引数2個目に調べたいAPIのリストを指定する。
+ソースコード4にTinkを利用しているAPKを数えるPythonスプリクトを示す。%引数1個目に、smaliファイルが入ったアプリごとに入っているフォルダを、引数2個目に調べたいAPIのリストを指定する。
 \lstinputlisting[caption=APIリストとsmaliファイルで利用されるメソッドのマッチングPythonスクリプト,label=find_grepbase.sh]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/grepbase.sh}
 
 

@@ -61,20 +61,20 @@ APKとは、Android Application Packageの略であり、Android向けのをAndr
 
 %%%%%%%%%%%%%%%%%%%APKストア%%%%%%%%%%%%%%%%%%%%
 \subsection{APKストア}
-APKストアとは、Androidアプリケーション開発者の作成したAndroidアプリケーションの配信を代行するサービス、およびそれを行っているWebサイトのことである。Androidの公式APKストアは、Android の公式APKストアであるGooglePlay\cite{GooglePlay}1つのみであり、非公式のAPKストアは数多く存在する。
+APKストアとは、Androidアプリケーション開発者の作成したAndroidアプリケーションの配信を代行するサービス、およびそれを行っているWebサイトのことである。Androidの公式APKストアは、Android の公式APKストアであるGooglePlay\cite{GooglePlay}のみであり、非公式のAPKストアは数多く存在する。
 
 
 %%%%%%%%%%%%%%%%%%%Android Developers%%%%%%%%%%%%%%%%%%%%
 \subsection{Android Developers}
 Android Developers とは、Androidアプリケーション開発者向けのAndroid公式Webサイトのことである\cite{Android_Developers}。Androidの詳細やドキュメントが提供されている。
-公式ドキュメントといった場合Android Developersを指す。
+本論では、公式ドキュメントといった場合Android Developersを指す。
 
 
 %%%%%%%%%%%%%%%%%%%smaliファイル%%%%%%%%%%%%%%%%%%%%
 \subsection{smaliファイル}
 smaliファイルとは、AndroidのDalvik仮想マシンで使用される開発者ファイルである。
 通常、Androidアプリケーションに含まれている実行可能ファイルである。
-DEX(Dalvik Executable)（Dalvik実行可能）ファイル（.apkファイル）を逆コンパイルすることによって作成される。
+DEX(Dalvik Executable、Dalvik実行可能）ファイル（.apkファイル）を逆コンパイルすることによって作成される。
 smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、Baksmali\cite{Baksmali}を用いる方法がある。
 
 
@@ -90,7 +90,7 @@ smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、
 Dalvikバイトコードとは、Androidにおける中間言語である。Apktool等を用いてAPKより取得できるsmaliファイルは、Dalvikバイトコードで記述されている。以下のソースコード 1、ソースコード2に、Dalvikバイトコードの例と対応するソースコードを示す。
 
 \lstinputlisting[caption=Dalvikバイトコードの例,label=BytecodeSample.smali]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.smali}
-\lstinputlisting[caption=対応するソースコード,label=BytecodeSample.java]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java}
+\lstinputlisting[caption=Listing1のバイトコードに対応するソースコード,label=BytecodeSample.java]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java}
 
 
 %%%%%%%%%%%%%%%%%%%CUI%%%%%%%%%%%%%%%%%%%
@@ -135,7 +135,7 @@ UNIXコマンドとは、Linux OS等のUNIXマシンにおいてCUI上からコ�
 %%%%%%%%%%%%%%%%%%%シェルスプリクト%%%%%%%%%%%%%%%%%%%%
 \subsection{シェルスプリクト}
 シェルスプリクトとは、OSを操作するためのシェル上で実行できる簡易なプログラム言語（スプリクト言語）のことを言う。また、スプリクト言語によって書かれた、複数のOSコマンドや制御文などを組み合わせたプログラムを指す。
-shコマンドの引数としてシェルスクリプトのファイルを与えて実行すると、ファイルに記述されたUNIXコマンドが上から順に実行される。以下のシェルスクリプトを実行すると、a.txtがb.txtにコピーされ、a.txtの末尾に“hoge”の文字列が追加される。
+shコマンドの引数としてシェルスクリプトのファイルを与えて実行すると、ファイルに記述されたUNIXコマンドが上から順に実行される。ソースコード3のシェルスクリプトを実行すると、a.txtがb.txtにコピーされ、a.txtの末尾に“hoge”の文字列が追加される。
 \lstinputlisting[caption=シェルスクリプトの例,label=ShellScriptSample.sh]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.sh}
 
 
