@@ -94,8 +94,9 @@ APIリストとsmaliファイルで利用されるメソッドのマッチング
 
 \begin{center} .* invoke-.*, L \end{center}
 
-この正規表現は、任意の文字列と任意の文字列と”invoke-”と任意の文字列と任意の文字列とカンマ(,)と”L”のパターンが0個以上の部分が抽出されることを示している。
-抽出された行の例を以下に示す。
+この正規表現は、”任意の文字”が0回以上繰り返したあとに”invoke-”がきて、そのあとに”任意の文字”が0回以上繰り返した後に”L”が来て終わる文字列が抽出されることを示している。
+
+抽出された行の1文を以下に示す。
 
 \begin{center} invoke-virtual \{p0\}, Lcom/google/crypto/tink/integration/android/AndroidKeysetManager;-\textgreater getKeysetHandle()Lcom/google/crypto/tink/KeysetHandle;\end{center}　
 
