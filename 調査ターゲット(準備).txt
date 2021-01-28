@@ -125,20 +125,10 @@ Tinkのドキュメントページ[https://google.github.io/tink/javadoc/tink-an
 リストの1部を抜粋し、表０に示す。リスト全体は付録Aに示す。
 
 
-
-\if
-　APIの分析
-－公式APIの分析
-河合さんがやった
-　　－サードパーティ製APIの分析
-　　　今回は、Google社のAPI、Tinkに対して研究を進めていく
-　　－独自実装等のAPIの分析
-　　　残課題
-\fi
-
-
-・
-
+正規表現について
+https://userweb.mnet.ne.jp/nakama/
+https://www.zacoding.com/post/regex-comma-separated/
+https://murashun.jp/article/programming/regular-expression.html
 
 
 
