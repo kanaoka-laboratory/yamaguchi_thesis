@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.10}CUI}{7}%
 \contentsline {subsection}{\numberline {2.11}Linux}{7}%
 \contentsline {subsection}{\numberline {2.12}Linuxカーネル}{7}%
-\contentsline {subsection}{\numberline {2.13}Linuxディストリービューション}{8}%
+\contentsline {subsection}{\numberline {2.13}Linuxディストリービューション}{7}%
 \contentsline {subsection}{\numberline {2.14}シェル}{8}%
 \contentsline {subsection}{\numberline {2.15}UNIXコマンド}{8}%
 \contentsline {subsection}{\numberline {2.16}シェルスプリクト}{8}%

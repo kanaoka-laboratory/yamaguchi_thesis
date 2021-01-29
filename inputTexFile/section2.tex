@@ -5,7 +5,7 @@
 
 %%%%%%%%%%%%%%%%%%%Android%%%%%%%%%%%%%%%%%%%%
 \subsection{Android}
-Androidとは、Googel社が2007年に開発したスマートフォンやタブレット端末など携帯情報機器向けのOperating System、あるいはAndroid OSが搭載された端末を指す。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を二分している。
+Androidとは、Googel社が2007年に開発したスマートフォンやタブレット端末など携帯情報機器向けのOperating System、あるいはAndroid OSが搭載された端末を指す。主にスマートフォンのOSとして広く普及しており、世界的にApple社の携帯機器向けiOSと市場を二分している\cite{share}。
 
 
 %%%%%%%%%%%%%%%%%%%Operating System%%%%%%%%%%%%%%%%%%%%
@@ -75,7 +75,7 @@ Android Developers とは、Androidアプリケーション開発者向けのAnd
 \subsection{smaliファイル}
 smaliファイルとは、Javaをコンパイルした後の機械語の状態のファイルである。
 %通常、Androidアプリケーションに含まれている実行可能ファイルである。
-DEX(Dalvik Executable、Dalvik実行可能）ファイル（APKファイル）を逆コンパイルすることによって作成される。
+%DEX(Dalvik Executable、Dalvik実行可能）ファイル（APKファイル）を逆コンパイルすることによって作成される。
 smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、Baksmali\cite{Baksmali}を用いる方法がある。
 
 
@@ -88,7 +88,7 @@ smaliファイルの取得には、Apktool\cite{Apktool}を用いる方法と、
 
 %%%%%%%%%%%%%%%%%%%Dalvikバイトコード%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Dalvikバイトコード}
-Dalvikバイトコードとは、Androidにおける中間言語である。Apktool等を用いてAPKより取得できるsmaliファイルは、Dalvikバイトコードで記述されている。以下のソースコード 1、ソースコード2に、Dalvikバイトコードの例と対応するソースコードを示す。
+Dalvikバイトコードとは、Androidにおける中間言語である。Apktool等を用いてAPKより取得できるsmaliファイルは、Dalvikバイトコードで記述されている。以下のListing1、Listing2に、Dalvikバイトコードの例と対応するソースコードを示す。
 
 \lstinputlisting[caption=Dalvikバイトコードの例,label=BytecodeSample.smali]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.smali}
 \lstinputlisting[caption=Listing1のバイトコードに対応するソースコード,label=BytecodeSample.java]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/BytecodeSample.java}
@@ -136,7 +136,7 @@ UNIXコマンドとは、Linux OS等のUNIXマシンにおいてCUI上からコ�
 %%%%%%%%%%%%%%%%%%%シェルスプリクト%%%%%%%%%%%%%%%%%%%%
 \subsection{シェルスプリクト}
 シェルスプリクトとは、OSを操作するためのシェル上で実行できる簡易なプログラム言語（スプリクト言語）のことを言う。また、スプリクト言語によって書かれた、複数のOSコマンドや制御文などを組み合わせたプログラムを指す。
-shコマンドの引数としてシェルスクリプトのファイルを与えて実行すると、ファイルに記述されたUNIXコマンドが上から順に実行される。ソースコード3のシェルスクリプトを実行すると、a.txtがb.txtにコピーされ、a.txtの末尾に“hoge”の文字列が追加される。
+shコマンドの引数としてシェルスクリプトのファイルを与えて実行すると、ファイルに記述されたUNIXコマンドが上から順に実行される。Listing3のシェルスクリプトを実行すると、a.txtがb.txtにコピーされ、a.txtの末尾に“hoge”の文字列が追加される。
 \lstinputlisting[caption=シェルスクリプトの例,label=ShellScriptSample.sh]{C:/Users/arier/Documents/卒論/yamaguchi_thesis-main/コード/ShellScriptSample.sh}
 
 
